@@ -37,6 +37,19 @@
   }
 }
 
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--title-color);
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -173,24 +186,21 @@ section {
 .nav-link::after {
   position: absolute;
   content: "";
-  bottom: -0.15rem;
+  bottom: -0.5rem;
   left: 0;
-  width: 0%;
-  height: 2px;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
   background: var(--title-color);
+  opacity: 0;
   transition: 0.4s;
 }
 
 /* Active nav-link */
-.active,
-.nav-link:hover {
-  color: var(--first-color);
-}
-
-.active::after,
-.nav-link:hover::after {
-  width: 100%;
-  background: var(--first-color);
+.active::after {
+  opacity: 1;
 }
 
 .nav-close {
@@ -233,9 +243,9 @@ section {
   color: var(--body-color);
 }
 
-.scrollup:hover{
-    transform: translateY(-.5rem);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* show scrollup */
@@ -249,7 +259,7 @@ section {
   .nav-menu {
     width: 50%;
   }
-  .scrollup{
+  .scrollup {
     right: 1.5rem;
   }
 }
@@ -275,7 +285,10 @@ section {
   .container {
     margin: 0 auto;
   }
-  .scrollup{
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+  .scrollup {
     right: 2rem;
     bottom: 2rem;
   }
