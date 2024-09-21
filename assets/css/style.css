@@ -2,7 +2,84 @@
 
 :root {
   --body-font: "Inter", sans-serif;
+
+  --big-font-size: 3rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 0.993rem;
+  --small-font-size: 0.838rem;
+
+  --body-color: #f3f3f3;
+  --container-color: #f8f8f8;
+  --first-color: #6c48c5;
+  --black-color: #181c14;
+  --title-color: #3c3d37;
+  --text-color: #697565;
+
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
+
+  --z-fixed: 100;
+  --z-tooltip: 10;
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.898rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+  font-weight: var(--fw-600);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+textarea,
+input {
+  border: none;
+  outline: none;
 }
