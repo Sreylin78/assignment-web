@@ -16,3 +16,10 @@ if (navToggle) {
 if (navClose) {
   navClose.addEventListener("click", toggleMenu);
 }
+
+// Click on nav-link close nav-menu on mobile
+const links = document.querySelectorAll(".nav-link");
+
+console.log(links);
+
+links.forEach((n) => n.addEventListener("click", toggleMenu));
