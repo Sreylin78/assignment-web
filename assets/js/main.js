@@ -23,3 +23,25 @@ const links = document.querySelectorAll(".nav-link");
 console.log(links);
 
 links.forEach((n) => n.addEventListener("click", toggleMenu));
+
+// scroll shodow-header
+const header = document.querySelector(".header");
+
+console.log(header);
+
+window.addEventListener("scroll", () => {
+  this.scrollY > 80
+    ? header.classList.add("shadow-header")
+    : header.classList.remove("shadow-header");
+});
+
+// showi scroll
+const scrollup = document.querySelector(".scrollup");
+
+console.log(scrollup);
+
+window.addEventListener("scroll", () => {
+  this.scrollY > 150
+    ? scrollup.classList.add("show-scroll")
+    : scrollup.classList.remove("show-scroll");
+});
