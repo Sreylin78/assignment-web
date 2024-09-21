@@ -193,3 +193,8 @@ input {
   font-size: 2rem;
   color: var(--title-color);
 }
+
+/* Show Menu */
+.show-menu {
+  right: 0;
+}
