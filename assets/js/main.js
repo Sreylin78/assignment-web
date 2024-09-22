@@ -30,7 +30,7 @@ const header = document.querySelector(".header");
 console.log(header);
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 80
+  this.scrollY > 300
     ? header.classList.add("shadow-header")
     : header.classList.remove("shadow-header");
 });
@@ -41,7 +41,7 @@ const scrollup = document.querySelector(".scrollup");
 console.log(scrollup);
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 150
+  this.scrollY > 400
     ? scrollup.classList.add("show-scroll")
     : scrollup.classList.remove("show-scroll");
 });
