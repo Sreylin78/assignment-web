@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+:root {
+  --body-font: "Kantumruy Pro", sans-serif;
+
+  --primary-color: #758bfd;
+  --container-color: #f8f8fa;
+  --body-color: #ffffff;
+  --title-color: #0c0c0c;
+  --text-color: #969696;
+
+  --title-font-size: 24px;
+  --normal-font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: var(--text-font);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+}
