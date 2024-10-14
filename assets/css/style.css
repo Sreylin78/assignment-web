@@ -1,23 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
-:root {
-  --body-font: "Kantumruy Pro", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap");
 
-  --primary-color: #758bfd;
-  --primary-color-alt: #475393;
-  --container-color: #f8f8fa;
+:root {
+  --header-height: 5.5rem;
+
+  --body-font: "Hanuman", sans-serif;
+
+  --primary-color: #ff9409;
+  --primary-color-alt: #e04218;
+  --container-color: #f8f8f8;
   --body-color: #ffffff;
   --black-color: #282828;
-  --title-color: #0c0c0c;
-  --text-color: #969696;
+  --title-color: #483c36;
+  --text-color: #9b9b9b;
+
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 900;
 
   --title-font-size: 24px;
   --normal-font-size: 16px;
+
+  --z-fixed: 100;
+  --z-tooltip: 10;
 }
 
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: var(--text-font);
+  font-family: var(--body-font);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c7c7c7;
 }
 
 *,
@@ -32,6 +55,8 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   font-size: var(--normal-font-size);
+  font-weight: var(--fw-400);
+  min-height: 1000vh;
 }
 
 h1,
@@ -42,4 +67,182 @@ h5,
 h6 {
   font-size: var(--title-font-size);
   color: var(--title-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button,
+textarea,
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Usable Class */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Header */
+#header {
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+
+#header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+#header .nav-logo {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: var(--fw-700);
+}
+
+#header.fixed-header {
+  position: fixed;
+  top: 0;
+  background: var(--container-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#nav-menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+#nav-menu ul li a {
+  position: relative;
+  color: var(--text-color);
+  transition: 0.4s;
+  font-weight: var(--fw-700);
+}
+
+#nav-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background: var(--text-color);
+  transition: 0.4s;
+}
+
+#nav-menu ul li a:hover::after,
+#nav-menu ul li a.active::after {
+  width: 100%;
+  background: var(--title-color);
+}
+
+#nav-menu ul li a:hover,
+#nav-menu ul li a.active {
+  color: var(--title-color);
+}
+
+#nav-close,
+#nav-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--title-color);
+  font-size: 1.5rem;
+}
+
+/* Scrollup */
+#scrollup {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  width: 35px;
+  height: 35px;
+  background-color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  color: var(--body-color);
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+#scrollup:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.15rem);
+  background-color: var(--primary-color-alt);
+}
+
+#scrollup.show-scrollup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
+@media screen and (max-width: 1180px) {
+  .container {
+    margin: 0 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav-toggle,
+  #nav-close {
+    display: block;
+  }
+  #nav-menu {
+    position: fixed;
+    background-color: var(--container-color);
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    right: -100%;
+    padding: 5rem 7rem;
+    z-index: var(--z-fixed);
+    box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem 0 0 1rem;
+    transition: 0.4s;
+  }
+  #nav-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 3rem;
+  }
+  #nav-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: var(--title-color);
+  }
+  #nav-menu.show-menu {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  #nav-menu {
+    width: 80%;
+  }
 }
