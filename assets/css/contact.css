@@ -1,0 +1,201 @@
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#contact .content {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact h2 {
+  margin-bottom: 10px;
+}
+
+#contact p {
+  margin-bottom: 40px;
+}
+
+#contact .info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#contact .info div {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#contact .c-icon {
+  display: grid;
+  place-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+#contact .c-icon i {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+#contact span {
+  color: var(--title-color);
+}
+
+#contact .form {
+  background: var(--black-color);
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#contact .input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#contact .inputs {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+#contact .input label {
+  font-size: 18px;
+  font-weight: var(--fw-700);
+  color: var(--body-color);
+}
+
+#contact .input input,
+#contact .input textarea {
+  border: 2px solid var(--body-color);
+  padding: 4px 8px;
+  width: 100%;
+  background: transparent;
+  height: 2.5rem;
+  border-radius: 8px;
+  font-family: var(--text-font);
+  font-size: 16px;
+  color: var(--body-color);
+  transition: 0.4s;
+}
+
+#contact .input textarea {
+  resize: vertical;
+  min-height: 5rem;
+  max-height: 8rem;
+}
+
+#contact .input input:is(:focus, :not(:placeholder-shown)),
+#contact .input textarea:is(:focus, :not(:placeholder-shown)) {
+  border-color: var(--primary-color);
+  caret-color: var(--primary-color);
+}
+
+#map.section {
+  background: var(--container-color);
+}
+
+#map .container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+#faqs .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#faqs .faq-content {
+  width: 70%;
+  background: var(--black-color);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#faqs .quest {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#faqs .quest h1 {
+  font-size: 18px;
+  font-family: var(--text-font);
+  color: var(--body-color);
+  transition: 0.4s;
+}
+
+#faqs .quest i {
+  font-size: 2rem;
+  color: var(--body-color);
+  transition: 0.4s;
+}
+
+#faqs .faq-content .answ {
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#faqs .faq-close .answ {
+  height: 0;
+  overflow: hidden;
+}
+
+#faqs .faq-open .answ {
+  height: max-content;
+  margin: 1rem 0 0.75rem;
+}
+
+#faqs .faq-open .quest i {
+  color: var(--primary-color);
+  transform: rotate(-180deg);
+}
+
+#faqs .faq-open .quest h1 {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 968px) {
+  #contact .container {
+    gap: 5rem;
+    justify-content: center;
+  }
+  #faqs .faq-content {
+    width: 100%;
+  }
+  #faqs .faq-content .quest h1 {
+    font-size: 16px;
+  }
+  #faqs .faq-content .answ span{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #contact .inputs {
+    flex-direction: column;
+    align-items: normal;
+    gap: 20px;
+  }
+  #faqs .faq-content .quest h1 {
+    font-size: 14px;
+  }
+}
