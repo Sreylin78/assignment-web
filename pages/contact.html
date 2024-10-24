@@ -11,6 +11,8 @@
     <title>ទំនាក់ទំនងផេក</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+
     <!-- WebIcon -->
     <link rel="icon" href="../assets/image/logo.png" />
     <!-- Icon -->
@@ -57,51 +59,224 @@
     </header>
 
     <!-- Content -->
-    <main id="page">
-      <section class="section"></section>
+    <main id="main">
+      <section id="contact" class="section">
+        <h1 class="section-title">ទំនាក់ទំនង</h1>
+
+        <div class="container">
+          <div class="content">
+            <h2>ទាក់ទងមីមី ភោជនីយដ្ឋាន</h2>
+            <p>
+              យើងរីករាយក្នុងការទទួលស្វាគមន៍អ្នកមកកាន់ មេយមេយ ភោជនីយដ្ឋាន
+              នៅក្នុងខេត្តតាកែវ ដើម្បីអោយអ្នកមានបទពិសោធន៍អាហារខ្មែរដ៏អស្ចារ្យ
+              និងប្លែកមិនធ្លាប់មានពីមុន។
+            </p>
+            <div class="info">
+              <div>
+                <div class="c-icon"><i class="ri-map-pin-2-line"></i></div>
+                <span>
+                  ផ្ទះលេខ ១៨, ផ្លូវជាតិលេខ ២, ស្រុកត្រាំង, <br />
+                  ខេត្តតាកែវ, កម្ពុជា
+                </span>
+              </div>
+              <div>
+                <div class="c-icon"><i class="ri-phone-line"></i></div>
+                <span> (+៨៥៥) ១២៣​ ៤៥៦ ​៧៨៩០ </span>
+              </div>
+              <div>
+                <div class="c-icon"><i class="ri-mail-line"></i></div>
+                <span> info@meymeyrestaurant.com </span>
+              </div>
+            </div>
+          </div>
+
+          <form class="form">
+            <div class="inputs">
+              <div class="input">
+                <label for="fname">នាមត្រកូល</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div class="input">
+                <label for="lname">នាមខ្លូន</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder=""
+                  required
+                />
+              </div>
+            </div>
+            <div class="input">
+              <label for="email">អុីមែល</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="message">សារ</label>
+              <textarea name="message" placeholder="" id="message"></textarea>
+            </div>
+            <button type="submit" class="button">ផ្ញើរសារ</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="map" class="section">
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2181.650821083652!2d104.78216859152295!3d10.905369280432858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31099da0f8fab50b%3A0x61f6da8b426c1cf!2sPrey%20Sandek%20Market!5e1!3m2!1sen!2skh!4v1729702974659!5m2!1sen!2skh"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="faqs" class="section">
+        <h1 class="section-title">សំណួរ និងចម្លើយ</h1>
+        <div class="container">
+          <div class="faq-content faq-open">
+            <div class="quest">
+              <div>
+                <h1>តើខ្ញុំអាចកក់តុនៅមេយមេយដោយរបៀបណា?</h1>
+              </div>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="answ">
+              <span
+                >ចម្លើយ: អ្នកអាចធ្វើការកក់តុនៅមេយមេយ
+                ភោជនីយដ្ឋានតាមរយៈគេហទំព័ររបស់យើង www.meymeyrestaurant.com
+                ឬតាមការហៅទូរស័ព្ទផ្ទាល់ទៅលេខ (+៨៥៥) ១២៣ ៤៥៦​​ ៧៨៩០។
+              </span>
+            </div>
+          </div>
+
+          <div class="faq-content faq-close">
+            <div class="quest">
+              <div>
+                <h1>
+                  តើមានបន្ទប់អាហារឯកជនសម្រាប់ព្រឹត្តិការណ៍ចំនួនប៉ុន្មាននាក់?
+                </h1>
+              </div>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="answ">
+              <span
+                >ចម្លើយ: បន្ទប់អាហារឯកជនរបស់យើងអាចទទួលភ្ញៀវបានរហូតដល់ 20 នាក់
+                សម្រាប់ព្រឹត្តិការណ៍ផ្ទាល់ខ្លួន
+                ឬជំនួបជាមួយគ្រួសារដ៏សន្សឹមសន្សាល។
+              </span>
+            </div>
+          </div>
+
+          <div class="faq-content faq-close">
+            <div class="quest">
+              <div>
+                <h1>
+                  តើនៅភោជនីយដ្ឋានមានមុខម្ហូបសមស្របសម្រាប់អ្នកធ្វើចំណីអាហារបួស
+                  ឬអាហារបំប៉នទេ?
+                </h1>
+              </div>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="answ">
+              <span
+                >ចម្លើយ: បាទ/ចាស! យើងមានមុខម្ហូបសម្រាប់អ្នកធ្វើចំណីអាហារបួស
+                និងអ្នកសម្រាប់អាហារបំប៉ន។
+                សូមជំរាបជាមុនដើម្បីក្រុមការងារអាចរៀបចំអាហារដែលសមស្របសម្រាប់អ្នកបាន។
+              </span>
+            </div>
+          </div>
+
+          <div class="faq-content faq-close">
+            <div class="quest">
+              <div>
+                <h1>តើមានបញ្ចុះតម្លៃឬឯកសារផ្សេងៗសម្រាប់ក្រុមធំៗទេ?</h1>
+              </div>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="answ">
+              <span
+                >ចម្លើយ: បាទ/ចាស! យើងផ្តល់ជូនបញ្ចុះតម្លៃពិសេសសម្រាប់ក្រុមធំៗ
+                និងព្រឹត្តិការណ៍ជាពិសេស។ សូមទាក់ទងជាមុន ដើម្បីធ្វើការចរចា
+                និងទទួលបានព័ត៌មានបន្ថែម។
+              </span>
+            </div>
+          </div>
+
+          <div class="faq-content faq-close">
+            <div class="quest">
+              <div>
+                <h1>តើមានកន្លែងចតរថយន្តសម្រាប់ភ្ញៀវទេ?</h1>
+              </div>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="answ">
+              <span
+                >ចម្លើយ: បាទ/ចាស!
+                ភោជនីយដ្ឋានរបស់យើងមានកន្លែងចតរថយន្តសម្រាប់ភ្ញៀវដោយសុវត្ថិភាព
+                និងងាយស្រួល។
+              </span>
+            </div>
+          </div>
+
+          <div class="faq-content faq-close">
+            <div class="quest">
+              <div>
+                <h1>តើមានសេវាកម្មដឹកជញ្ជូនម្ហូបឬទេ?</h1>
+              </div>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="answ">
+              <span
+                >ចម្លើយ: បាទ/ចាស!
+                យើងផ្តល់ជូនសេវាកម្មដឹកជញ្ជូនម្ហូបតាមតំបន់ជិតខាង។
+                សូមទាក់ទងសម្រាប់ព័ត៌មានលម្អិត។
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer id="footer">
       <div class="container">
         <div class="f-content">
-          <h3>ហាងគ្មានឈ្មោះ</h3>
-          <ul class="f-socials">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-tiktok-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-telegram-2-fill"></i></a>
-            </li>
-          </ul>
+          <a href="#" class="footer-logo">
+            <img src="../assets/image/logo.png" alt="logo" />
+          </a>
         </div>
-        <div class="f-content">
-          <h3>អំពីយើង</h3>
-          <ul class="f-links">
-            <li><a class="links" href="#">លីង ១</a></li>
-            <li><a class="links" href="#">លីង ២</a></li>
-            <li><a class="links" href="#">លីង ៣</a></li>
-          </ul>
-        </div>
-        <div class="f-content">
-          <h3>សេវាកម្ម</h3>
-          <ul class="f-links">
-            <li><a class="links" href="#">លីង ១</a></li>
-            <li><a class="links" href="#">លីង ២</a></li>
-            <li><a class="links" href="#">លីង ៣</a></li>
-          </ul>
-        </div>
-        <div class="f-content">
-          <h3>ទំនាក់ទំនង</h3>
-          <ul class="f-links">
-            <li><a class="links" href="#">លីង ១</a></li>
-            <li><a class="links" href="#">លីង ២</a></li>
-            <li><a class="links" href="#">លីង ៣</a></li>
-          </ul>
-        </div>
+
+        <ul class="f-list">
+          <li><a href="#" class="links">ទំព័រដើម</a></li>
+          <li><a href="#" class="links">មីនុយ</a></li>
+          <li><a href="#" class="links">អំពីយើង</a></li>
+          <li><a href="#" class="links">សេវាកម្ម</a></li>
+          <li><a href="#" class="links">ទំនាក់ទំនង</a></li>
+        </ul>
+
+        <ul class="f-socials">
+          <li>
+            <a href="#"> <i class="ri-facebook-fill"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
+          </li>
+        </ul>
       </div>
       <div class="copy-right container">
         <p>
@@ -118,5 +293,6 @@
 
     <!-- JS -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/contact.js"></script>
   </body>
 </html>

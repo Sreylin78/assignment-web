@@ -27,7 +27,7 @@ const header = document.getElementById("header");
 
 if (header) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 180) {
+    if (window.scrollY >= 100) {
       header.classList.add("fixed-header");
     } else {
       header.classList.remove("fixed-header");
