@@ -225,6 +225,14 @@ ul {
   color: var(--body-color);
 }
 
+#header.fixed-header .links:hover {
+  color: var(--body-color);
+}
+
+#header.fixed-header .links:hover::after {
+  background-color: var(--body-color);
+}
+
 #header.fixed-header .active {
   color: var(--body-color);
 }
