@@ -33,7 +33,7 @@ client-desc
 ------------------------
 
 client-name
-លោក សុវណ្ណារិទ្ធ (Mr. Sovannarith)
-នាង ស្រីមុំ (Ms. Sreymom)
-លោក សីហា (Mr. Seiha)
-នាង សុជាតា (Ms. Socheata)
+លោក វណ្ណាបុត្រ (Mr. Vannaboth)
+អ្នកនាង ស្រីលីន (Ms. Sreylin)
+លោក រក្សា (Mr. Raksa)
+អ្នកនាង សាវរី (Ms. Savry)
