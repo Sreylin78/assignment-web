@@ -230,7 +230,11 @@ ul {
 }
 
 #header.fixed-header .links:hover::after {
+<<<<<<< HEAD
+  background-color: var(--body-color);
+=======
   background: var(--body-color);
+>>>>>>> 9ab54716d1b77e0e8dfa251bbc131168dce7ebc1
 }
 
 #header.fixed-header .active {
