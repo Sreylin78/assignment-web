@@ -119,11 +119,11 @@ ul {
 .links {
   position: relative;
   color: var(--text-color);
-  transition: 0.4s;
+  transition: 0.4s ease;
   font-weight: var(--fw-700);
 }
 
-.links::after {
+.links::before {
   content: "";
   position: absolute;
   bottom: -0.25rem;
@@ -133,10 +133,10 @@ ul {
   width: 100%;
   height: 2px;
   background-color: var(--black-color);
-  transition: transform 0.4s;
+  transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.links:hover::after {
+.links:hover::before {
   transform: translateX(-50%) scaleX(1);
   transform-origin: left;
 }
@@ -150,7 +150,6 @@ ul {
   padding: 0.75rem 1.5rem;
   font-size: 14px;
   font-family: var(--text-font);
-  border-radius: 5px;
   font-weight: var(--fw-700);
   background: var(--primary-color);
   color: var(--body-color);
@@ -160,6 +159,17 @@ ul {
 
 .button:hover {
   background: var(--primary-color-alt);
+}
+
+.button-black {
+  border: 2px solid transparent;
+  background-color: var(--black-color);
+}
+
+.button-black:hover {
+  background: transparent;
+  border: 2px solid var(--black-color);
+  color: var(--black-color);
 }
 
 /* Header */
@@ -202,7 +212,7 @@ ul {
   color: var(--black-color);
 }
 
-#nav-menu .active::after {
+#nav-menu .active::before {
   transform: translateX(-50%) scaleX(1);
   transform-origin: left;
 }
@@ -229,19 +239,15 @@ ul {
   color: var(--body-color);
 }
 
-#header.fixed-header .links:hover::after {
-<<<<<<< HEAD
-  background-color: var(--body-color);
-=======
+#header.fixed-header .links:hover::before {
   background: var(--body-color);
->>>>>>> 9ab54716d1b77e0e8dfa251bbc131168dce7ebc1
 }
 
 #header.fixed-header .active {
   color: var(--body-color);
 }
 
-#header.fixed-header .active::after {
+#header.fixed-header .active::before {
   background-color: var(--body-color);
 }
 
@@ -291,7 +297,7 @@ ul {
   color: var(--body-color);
 }
 
-#footer .links:hover::after {
+#footer .links:hover::before {
   background: var(--body-color);
 }
 
@@ -335,7 +341,7 @@ ul {
   color: var(--primary-color);
 }
 
-#footer .copy-right p a:hover::after {
+#footer .copy-right p a:hover::before {
   background-color: var(--primary-color);
 }
 
@@ -352,7 +358,6 @@ ul {
   color: var(--body-color);
   font-size: 1.5rem;
   opacity: 0;
-  border-radius: 8px;
   visibility: none;
   pointer-events: none;
   transition: 0.4s;
@@ -424,7 +429,7 @@ ul {
     color: var(--black-color);
   }
 
-  #header.fixed-header .active::after {
+  #header.fixed-header .active::before {
     background-color: var(--black-color);
   }
   #nav-close {

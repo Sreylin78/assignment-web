@@ -71,6 +71,7 @@
               នៅក្នុងខេត្តតាកែវ ដើម្បីអោយអ្នកមានបទពិសោធន៍អាហារខ្មែរដ៏អស្ចារ្យ
               និងប្លែកមិនធ្លាប់មានពីមុន។
             </p>
+
             <div class="info">
               <div>
                 <div class="c-icon"><i class="ri-map-pin-2-line"></i></div>
@@ -91,27 +92,15 @@
           </div>
 
           <form class="form">
-            <div class="inputs">
-              <div class="input">
-                <label for="fname">នាមត្រកូល</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder=""
-                  required
-                />
-              </div>
-              <div class="input">
-                <label for="lname">នាមខ្លូន</label>
-                <input
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  placeholder=""
-                  required
-                />
-              </div>
+            <div class="input">
+              <label for="name">ឈ្មោះ</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=""
+                required
+              />
             </div>
             <div class="input">
               <label for="email">អុីមែល</label>
@@ -127,7 +116,13 @@
               <label for="message">សារ</label>
               <textarea name="message" placeholder="" id="message"></textarea>
             </div>
-            <button type="submit" class="button">ផ្ញើរសារ</button>
+            <div class="btn">
+              <span class="success-message"></span>
+              <span class="error-message"></span>
+              <button type="submit" value="send" class="button">
+                ផ្ញើរសារ
+              </button>
+            </div>
           </form>
         </div>
       </section>
@@ -290,6 +285,12 @@
     <a href="#" id="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <!-- JS -->
     <script src="../assets/js/main.js"></script>
