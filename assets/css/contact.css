@@ -234,7 +234,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  #contact .section {
+  #contact.section {
     padding-top: 0;
   }
 }
