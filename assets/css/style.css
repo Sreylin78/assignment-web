@@ -33,6 +33,10 @@ html {
   font-family: var(--text-font);
 }
 
+::selection{
+  background: #ffcf91;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
   background: var(--container-color-alt);

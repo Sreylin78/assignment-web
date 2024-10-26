@@ -18,9 +18,14 @@ if (close) {
 // Click nav-link close nav-menu
 const links = document.querySelectorAll("#nav-menu ul li a");
 
-if(links){
-  links.forEach(link => link.addEventListener("click", () => menu.classList.remove("show-menu")));
+if (links) {
+  links.forEach((link) =>
+    link.addEventListener("click", () => menu.classList.remove("show-menu"))
+  );
 }
+
+// Scroll Close nav-menu
+window.addEventListener("scroll", () => menu.classList.remove("show-menu"));
 
 // Scroll Header Fixed
 const header = document.getElementById("header");
