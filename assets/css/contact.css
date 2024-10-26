@@ -163,57 +163,57 @@
   gap: 2rem;
 }
 
-#faqs .faq-content {
+.faq-content {
   width: 70%;
   background: var(--black-color);
   padding: 20px;
   transition: 0.4s;
 }
 
-#faqs .faq-content:hover {
+.faq-content:hover {
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.3);
 }
 
-#faqs .quest {
+.quest {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
 
-#faqs .quest h1 {
+.quest h1 {
   font-size: 18px;
   font-family: var(--text-font);
   color: var(--body-color);
   transition: 0.4s;
 }
 
-#faqs .quest i {
+.quest i {
   font-size: 2rem;
   color: var(--body-color);
   transition: 0.4s;
 }
 
-#faqs .faq-content .answ {
+.faq-content .answ {
   transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#faqs .faq-close .answ {
+.faq-close .answ {
   height: 0;
   overflow: hidden;
 }
 
-#faqs .faq-open .answ {
+.faq-open .answ {
   height: max-content;
   margin: 1rem 0 0.75rem;
 }
 
-#faqs .faq-open .quest i {
+.faq-open .quest i {
   color: var(--primary-color);
   transform: rotate(-180deg);
 }
 
-#faqs .faq-open .quest h1 {
+.faq-open .quest h1 {
   color: var(--primary-color);
 }
 
@@ -222,36 +222,40 @@
     gap: 5rem;
     justify-content: center;
   }
-  #faqs .faq-content {
+  .faq-content {
     width: 100%;
   }
-  #faqs .faq-content .quest h1 {
+  .faq-content .quest h1 {
     font-size: 16px;
   }
-  #faqs .faq-content .answ span {
+  .faq-content .answ span {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #contact .section {
+  #contact.section {
     padding-top: 0;
+  }
+  .content h2 {
+    text-align: center;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 468px) {
-  #contact .form {
+  .form {
     padding: 20px;
   }
-  #contact .inputs {
+  .inputs {
     flex-direction: column;
     align-items: normal;
     gap: 20px;
   }
-  #faqs .faq-content {
+  .faq-content {
     padding: 10px;
   }
-  #faqs .faq-content .quest h1 {
+  .faq-content .quest h1 {
     font-size: 14px;
   }
 }
