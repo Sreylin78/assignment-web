@@ -1,37 +1,37 @@
-#contact .container {
+.container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
-#contact .content {
+.content {
   width: 470px;
   display: flex;
   flex-direction: column;
 }
 
-#contact h2 {
+.content h2 {
   margin-bottom: 10px;
 }
 
-#contact p {
+.content p {
   margin-bottom: 40px;
 }
 
-#contact .info {
+.info {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-#contact .info div {
+.info div {
   display: flex;
   align-items: center;
   column-gap: 20px;
 }
 
-#contact .c-icon {
+.info .c-icon {
   display: grid;
   place-content: center;
   width: 40px;
@@ -41,71 +41,98 @@
   border-radius: 50%;
 }
 
-#contact .c-icon i {
+.info .c-icon i {
   color: var(--primary-color);
   font-size: 1.25rem;
 }
 
-#contact span {
+.info span {
   color: var(--title-color);
 }
 
-#contact .form {
+.form {
   background: var(--black-color);
   width: 450px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
   row-gap: 20px;
   padding: 40px;
-  border-radius: 8px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#contact .input {
+.input {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   row-gap: 10px;
 }
 
-#contact .inputs {
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
-}
-
-#contact .input label {
+.input label {
   font-size: 18px;
   font-weight: var(--fw-700);
   color: var(--body-color);
 }
 
-#contact .input input,
-#contact .input textarea {
+.input input,
+.input textarea {
   border: 2px solid var(--body-color);
   padding: 4px 8px;
   width: 100%;
   background: transparent;
   height: 2.5rem;
-  border-radius: 8px;
   font-family: var(--text-font);
   font-size: 16px;
   color: var(--body-color);
   transition: 0.4s;
 }
 
-#contact .input textarea {
+.input textarea {
   resize: vertical;
   min-height: 5rem;
   max-height: 8rem;
 }
 
-#contact .input input:is(:focus, :not(:placeholder-shown)),
-#contact .input textarea:is(:focus, :not(:placeholder-shown)) {
+.input input:is(:focus, :not(:placeholder-shown)),
+.input textarea:is(:focus, :not(:placeholder-shown)) {
   border-color: var(--primary-color);
   caret-color: var(--primary-color);
 }
 
+.form .btn {
+  position: relative;
+}
+
+.error-message,
+.success-message {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -2rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  font-size: 12px;
+  text-align: end;
+  transition: 0.4s ease-in-out;
+}
+
+.error-message {
+  color: crimson;
+}
+
+.success-message {
+  color: lawngreen;
+}
+
+.show {
+  opacity: 1;
+  right: 0;
+  visibility: visible;
+}
+
+/* Map */
 #map.section {
   background: var(--container-color);
 }
@@ -119,9 +146,16 @@
 #map .container iframe {
   width: 100%;
   height: 450px;
-  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+#map .container iframe:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Faqs */
 #faqs .container {
   display: flex;
   align-items: center;
@@ -129,53 +163,57 @@
   gap: 2rem;
 }
 
-#faqs .faq-content {
+.faq-content {
   width: 70%;
   background: var(--black-color);
   padding: 20px;
-  border-radius: 4px;
+  transition: 0.4s;
 }
 
-#faqs .quest {
+.faq-content:hover {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.quest {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
 
-#faqs .quest h1 {
+.quest h1 {
   font-size: 18px;
   font-family: var(--text-font);
   color: var(--body-color);
   transition: 0.4s;
 }
 
-#faqs .quest i {
+.quest i {
   font-size: 2rem;
   color: var(--body-color);
   transition: 0.4s;
 }
 
-#faqs .faq-content .answ {
+.faq-content .answ {
   transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#faqs .faq-close .answ {
+.faq-close .answ {
   height: 0;
   overflow: hidden;
 }
 
-#faqs .faq-open .answ {
+.faq-open .answ {
   height: max-content;
   margin: 1rem 0 0.75rem;
 }
 
-#faqs .faq-open .quest i {
+.faq-open .quest i {
   color: var(--primary-color);
   transform: rotate(-180deg);
 }
 
-#faqs .faq-open .quest h1 {
+.faq-open .quest h1 {
   color: var(--primary-color);
 }
 
@@ -184,36 +222,40 @@
     gap: 5rem;
     justify-content: center;
   }
-  #faqs .faq-content {
+  .faq-content {
     width: 100%;
   }
-  #faqs .faq-content .quest h1 {
+  .faq-content .quest h1 {
     font-size: 16px;
   }
-  #faqs .faq-content .answ span {
+  .faq-content .answ span {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #contact .section {
+  #contact.section {
     padding-top: 0;
+  }
+  .content h2 {
+    text-align: center;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 468px) {
-  #contact .form {
+  .form {
     padding: 20px;
   }
-  #contact .inputs {
+  .inputs {
     flex-direction: column;
     align-items: normal;
     gap: 20px;
   }
-  #faqs .faq-content {
+  .faq-content {
     padding: 10px;
   }
-  #faqs .faq-content .quest h1 {
+  .faq-content .quest h1 {
     font-size: 14px;
   }
 }
