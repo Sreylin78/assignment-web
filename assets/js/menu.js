@@ -48,7 +48,6 @@ popularItems.forEach((item) => {
   </div>
   <div class="action">
     <span>តម្លៃ <b>${item.price}</b></span>
-    <a href="#"><i class="ri-heart-line"></i></a>
   </div>
 `;
   popularMenu.appendChild(card);
@@ -87,6 +86,7 @@ const newItems = [
 ];
 
 const newMenu = document.getElementById("newContainer");
+
 newItems.forEach((item) => {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -103,7 +103,6 @@ newItems.forEach((item) => {
   </div>
   <div class="action">
     <span>តម្លៃ <b>${item.price}</b></span>
-    <a href="#"><i class="ri-heart-line"></i></a>
   </div>
 `;
   newMenu.appendChild(card);
@@ -271,7 +270,6 @@ allMenuItems.forEach((item) => {
   </div>
   <div class="action">
     <span>តម្លៃ <b>${item.price}</b></span>
-    <a href="#"><i class="ri-heart-line"></i></a>
   </div>
 `;
   allMenuContainer.appendChild(card);

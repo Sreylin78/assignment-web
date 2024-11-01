@@ -145,9 +145,7 @@
 }
 
 @media screen and (max-width: 968px) {
-  .services-1 .container,
-  .services-2 .container,
-  .services-3 .container {
+  .services .container {
     justify-content: center;
   }
   .services-1 .image,
@@ -160,9 +158,7 @@
   .services-3 .image {
     order: -1;
   }
-  .services-1 .info h1,
-  .services-2 .info h1,
-  .services-3 .info h1 {
+  .services .info h1 {
     text-align: center;
   }
   #client .container .card {
