@@ -20,10 +20,11 @@
   padding: 20px;
   border-radius: 4px;
   background: var(--container-color);
-  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
 }
 
 .services-2 .image {
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
   background-color: var(--body-color);
 }
 
@@ -41,12 +42,11 @@
 .services .info {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
   margin-bottom: 40px;
 }
 
-.services .info h1 {
-  font-size: 18px;
+.services .info p {
+  font-size: 20px;
 }
 
 .services-2 {
@@ -57,6 +57,7 @@
   padding-bottom: 0;
 }
 
+/* Client */
 #client {
   background: var(--container-color);
 }
@@ -70,12 +71,13 @@
 }
 
 #client .card {
-  max-width: 540px;
+  width: 540px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
   gap: 40px;
+  cursor: pointer;
   background: var(--black-color);
   transition: 0.4s;
 }
@@ -130,9 +132,7 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .services-1 .image,
-  .services-2 .image,
-  .services-3 .image {
+  .services .image {
     width: 380px;
     height: 380px;
   }
@@ -148,11 +148,9 @@
   .services .container {
     justify-content: center;
   }
-  .services-1 .image,
-  .services-2 .image,
-  .services-3 .image {
-    width: 450px;
-    height: 450px;
+  .services .image {
+    width: 380px;
+    height: 380px;
   }
   .services-1 .image,
   .services-3 .image {
@@ -170,5 +168,26 @@
 @media screen and (max-width: 768px) {
   #services.section {
     padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .image {
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+  }
+  .content {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .image {
+    width: 280px;
+    height: 280px;
+  }
+  .content {
+    width: 250px;
   }
 }
