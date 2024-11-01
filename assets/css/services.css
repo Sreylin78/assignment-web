@@ -1,10 +1,4 @@
-/* Services */
 .services .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4rem;
   padding: 120px 0;
 }
 
@@ -12,10 +6,19 @@
   padding-top: 0;
 }
 
-.image {
-  width: 420px;
-  height: 420px;
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.services .image {
+  width: 480px;
+  height: 480px;
   padding: 20px;
+  border-radius: 4px;
   background: var(--container-color);
   box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
 }
@@ -25,24 +28,25 @@
   background-color: var(--body-color);
 }
 
-.image img {
+.services .image img {
+  border-radius: 4px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.content {
-  width: 350px;
+.services .content {
+  width: 450px;
 }
 
-.info {
+.services .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
 }
 
-.info h1 {
+.services .info h1 {
   font-size: 18px;
 }
 
@@ -72,6 +76,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
   gap: 40px;
   cursor: pointer;
   background: var(--black-color);
@@ -81,6 +86,9 @@
 #client .card .head {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -98,6 +106,7 @@
 #client .card .bottom {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 1.5rem;
 }
 
@@ -148,9 +157,7 @@
   .services-3 .image {
     order: -1;
   }
-  .services-1 .info h1,
-  .services-2 .info h1,
-  .services-3 .info h1 {
+  .services .info h1 {
     text-align: center;
   }
   #client .container .card {
