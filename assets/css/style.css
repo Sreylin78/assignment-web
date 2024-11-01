@@ -33,8 +33,9 @@ html {
   font-family: var(--text-font);
 }
 
-::selection{
+::selection {
   background: #ffcf91;
+  color: #000;
 }
 
 ::-webkit-scrollbar {

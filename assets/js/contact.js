@@ -16,24 +16,24 @@ window.onload = function () {
         console.log("Success!");
         successMessage.classList.add("show");
         successMessage.textContent = "Your message has been successfully sent!";
-        name.value = "";
-        email.value = "";
-        message.value = "";
         errorMessage.classList.remove("show");
 
         setTimeout(() => {
+          name.value = "";
+          email.value = "";
+          message.value = "";
           successMessage.classList.remove("show");
-        }, 5000); 
+        }, 5000);
       },
       (error) => {
         console.error("Failed!", error);
         errorMessage.classList.add("show");
         errorMessage.textContent = "Failed to send message!";
-        successMessage.classList.remove("show"); 
+        successMessage.classList.remove("show");
 
         setTimeout(() => {
           errorMessage.classList.remove("show");
-        }, 5000); 
+        }, 5000);
       }
     );
   });
