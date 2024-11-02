@@ -115,6 +115,7 @@
 }
 
 .chef-container .info h3 {
+  font-family: var(--title-font);
   font-size: 14px;
 }
 

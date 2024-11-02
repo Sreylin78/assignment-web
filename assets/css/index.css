@@ -19,15 +19,8 @@
   margin-bottom: 2rem;
 }
 
-.hero-container .info h2 {
-  font-size: 24px;
-  font-family: var(--text-font);
-  font-weight: 400;
+.hero-container .info h3 {
   margin-bottom: 0.75rem;
-}
-
-.hero-container .info p {
-  font-size: 20px;
 }
 
 .hero-container .image {
@@ -87,7 +80,6 @@
 .about-container .content p,
 .contact-container .content p {
   color: var(--body-color);
-  font-size: 20px;
   margin-bottom: 3rem;
 }
 
@@ -169,7 +161,7 @@
 
 @media screen and (max-width: 1050px) {
   .hero-container .content {
-    width: 400px;
+    width: 420px;
   }
   .hero-container .image {
     width: 420px;
@@ -181,9 +173,6 @@
 }
 
 @media screen and (max-width: 968px) {
-  #hero.section {
-    padding-top: 0;
-  }
   .hero-container {
     justify-content: center;
     gap: 7rem;
@@ -194,10 +183,6 @@
   #menu.section,
   #open.section {
     padding-bottom: 180px;
-  }
-  #contact,
-  #about {
-    padding-top: 180px;
   }
   #about .wrapper,
   #contact .wrapper {
@@ -213,17 +198,24 @@
   .contact-container .images {
     width: 320px;
     height: 320px;
-    top: -4rem;
+    top: -0.5rem;
     right: 0;
     left: 0;
     margin: 0 auto;
   }
-  .contact-container .images {
-    top: -2rem;
+  .about-container .content,
+  .contact-container .content{
+    max-width: 320px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #hero.section {
+    padding-top: 0;
+  }
+  .open-container .content h2 br {
+    display: none;
+  }
   .hero-container .image {
     width: 350px;
     height: 350px;
@@ -255,9 +247,6 @@
   .open-container .content h2 {
     margin: 0 1.5rem;
     font-size: 16px;
-  }
-  .open-container .content h2 {
-    font-size: 20px;
   }
   .open-container .content h2 br {
     display: none;
