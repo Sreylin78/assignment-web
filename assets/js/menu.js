@@ -1,6 +1,7 @@
 // Render popular menu Cards
 const popularItems = [
   {
+    id: 2,
     image: "../assets/image/menu/menu-2.jpg",
     title: "ខ្យងផ្លិតឆាម្រេចខ្ទី",
     description: "Description for ខ្យងផ្លិតឆាម្រេចខ្ទី",
@@ -8,6 +9,7 @@ const popularItems = [
     stars: 4,
   },
   {
+    id: 8,
     image: "../assets/image/menu/menu-8.jpg",
     title: "ស្ងោរជ្រក់បង្កង",
     description: "Description for ស្ងោរជ្រក់បង្កង",
@@ -15,6 +17,7 @@ const popularItems = [
     stars: 4,
   },
   {
+    id: 14,
     image: "../assets/image/menu/menu-14.jpg",
     title: "បាយឆាគ្រឿងសមុទ្រ",
     description: "Description for បាយឆាគ្រឿងសមុទ្រ",
@@ -22,6 +25,7 @@ const popularItems = [
     stars: 4,
   },
   {
+    id: 16,
     image: "../assets/image/menu/menu-16.jpg",
     title: "ប្រហុកខ្ទិះ",
     description: "Description for ប្រហុកខ្ទិះ",
@@ -48,6 +52,7 @@ popularItems.forEach((item) => {
   </div>
   <div class="action">
     <span>តម្លៃ <b>${item.price}</b></span>
+    <span id="add-cart" item-id=${item.id}> <i class="ri-shopping-bag-line"></i> </span>
   </div>
 `;
   popularMenu.appendChild(card);
@@ -56,6 +61,7 @@ popularItems.forEach((item) => {
 // Render newmenu Cards
 const newItems = [
   {
+    id: 1,
     image: "../assets/image/menu/menu-1.jpg",
     title: "សាច់គោអាំងចង្កាក់",
     description: "Description for សាច់គោអាំងចង្កាក់",
@@ -63,6 +69,7 @@ const newItems = [
     stars: 4,
   },
   {
+    id: 2,
     image: "../assets/image/menu/menu-2.jpg",
     title: "ខ្យងផ្លិតឆាម្រេចខ្ទី",
     description: "Description for ខ្យងផ្លិតឆាម្រេចខ្ទី",
@@ -70,6 +77,7 @@ const newItems = [
     stars: 4,
   },
   {
+    id: 3,
     image: "../assets/image/menu/menu-3.jpg",
     title: "សាច់ក្កកតាកែវ",
     description: "Description for សាច់ក្កកតាកែវ",
@@ -77,6 +85,7 @@ const newItems = [
     stars: 3.5,
   },
   {
+    id: 4,
     image: "../assets/image/menu/menu-4.jpg",
     title: "ម៉ុកមី",
     description: "Description for ម៉ុកមី",
@@ -103,6 +112,7 @@ newItems.forEach((item) => {
   </div>
   <div class="action">
     <span>តម្លៃ <b>${item.price}</b></span>
+    <span id="add-cart" item-id=${item.id}> <i class="ri-shopping-bag-line"></i> </span>
   </div>
 `;
   newMenu.appendChild(card);
@@ -111,6 +121,7 @@ newItems.forEach((item) => {
 // Render allmenu Cards
 const allMenuItems = [
   {
+    id: 1,
     image: "../assets/image/menu/menu-1.jpg",
     title: "សាច់គោអាំងចង្កាក់",
     description: "Description for សាច់គោអាំងចង្កាក់",
@@ -118,6 +129,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 2,
     image: "../assets/image/menu/menu-2.jpg",
     title: "ខ្យងផ្លិតឆាម្រេចខ្ទី",
     description: "Description for ខ្យងផ្លិតឆាម្រេចខ្ទី",
@@ -125,6 +137,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 3,
     image: "../assets/image/menu/menu-3.jpg",
     title: "សាច់ក្កកតាកែវ",
     description: "Description for សាច់ក្កកតាកែវ",
@@ -132,6 +145,7 @@ const allMenuItems = [
     stars: 3.5,
   },
   {
+    id: 4,
     image: "../assets/image/menu/menu-4.jpg",
     title: "ម៉ុកមី",
     description: "Description for ម៉ុកមី",
@@ -139,6 +153,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 5,
     image: "../assets/image/menu/menu-5.jpg",
     title: "ភ្លាគ្រឿងសមុទ្រជាមួយផ្លែប៊ឺរ",
     description: "Description for ភ្លាគ្រឿងសមុទ្រជាមួយផ្លែប៊ឺរ",
@@ -146,6 +161,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 6,
     image: "../assets/image/menu/menu-6.jpg",
     title: "ភ្លាសាច់គោ",
     description: "Description for ភ្លាសាច់គោ",
@@ -153,6 +169,7 @@ const allMenuItems = [
     stars: 3,
   },
   {
+    id: 7,
     image: "../assets/image/menu/menu-7.jpg",
     title: "ញាំសាច់មាន់ជាមួយត្រយ៉ូងចេក",
     description: "Description for ញាំសាច់មាន់ជាមួយត្រយ៉ូងចេក",
@@ -160,6 +177,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 8,
     image: "../assets/image/menu/menu-8.jpg",
     title: "ស្ងោរជ្រក់បង្កង",
     description: "Description for ស្ងោរជ្រក់បង្កង",
@@ -167,6 +185,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 9,
     image: "../assets/image/menu/menu-9.jpg",
     title: "សម្លម្ជូរខ្ទិះគ្រឿងសមុទ្រ",
     description: "Description for សម្លម្ជូរខ្ទិះគ្រឿងសមុទ្រ",
@@ -174,6 +193,7 @@ const allMenuItems = [
     stars: 3.5,
   },
   {
+    id: 10,
     image: "../assets/image/menu/menu-10.jpg",
     title: "សម្លកកូរ",
     description: "Description for សម្លកកូរ",
@@ -181,6 +201,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 11,
     image: "../assets/image/menu/menu-11.jpg",
     title: "បាយឆាម្មាស់",
     description: "Description for បាយឆាម្មាស់",
@@ -188,6 +209,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 12,
     image: "../assets/image/menu/menu-12.jpg",
     title: "បាយការីសាច់មាន់ខ្ចប់ស្លឹកឈូក",
     description: "Description for បាយការីសាច់មាន់ខ្ចប់ស្លឹកឈូក",
@@ -195,6 +217,7 @@ const allMenuItems = [
     stars: 3,
   },
   {
+    id: 13,
     image: "../assets/image/menu/menu-13.jpg",
     title: "បាយឆាបង្កង",
     description: "Description for បាយឆាបង្កង",
@@ -202,6 +225,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 14,
     image: "../assets/image/menu/menu-14.jpg",
     title: "បាយឆាគ្រឿងសមុទ្រ",
     description: "Description for បាយឆាគ្រឿងសមុទ្រ",
@@ -209,6 +233,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 15,
     image: "../assets/image/menu/menu-15.jpg",
     title: "ឆាខ្ញីសាច់មាន់",
     description: "Description for ឆាខ្ញីសាច់មាន់",
@@ -216,6 +241,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 16,
     image: "../assets/image/menu/menu-16.jpg",
     title: "ប្រហុកខ្ទិះ",
     description: "Description for ប្រហុកខ្ទិះ",
@@ -223,6 +249,7 @@ const allMenuItems = [
     stars: 3.5,
   },
   {
+    id: 17,
     image: "../assets/image/menu/menu-17.jpg",
     title: "សាច់គោអាំងទឹកម្រិច",
     description: "Description for សាច់គោអាំងទឹកម្រិច",
@@ -230,6 +257,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 18,
     image: "../assets/image/menu/menu-18.jpg",
     title: "ទាអាំង",
     description: "Description for ទាអាំង",
@@ -237,6 +265,7 @@ const allMenuItems = [
     stars: 4,
   },
   {
+    id: 19,
     image: "../assets/image/menu/menu-19.jpg",
     title: "ត្រីដុតអំបិល",
     description: "Description for ត្រីដុតអំបិល",
@@ -244,6 +273,7 @@ const allMenuItems = [
     stars: 3,
   },
   {
+    id: 20,
     image: "../assets/image/menu/menu-20.jpg",
     title: "មាន់អាំងទឹកម្រិច",
     description: "Description for មាន់អាំងទឹកម្រិច",
@@ -270,6 +300,7 @@ allMenuItems.forEach((item) => {
   </div>
   <div class="action">
     <span>តម្លៃ <b>${item.price}</b></span>
+    <span id="add-cart" item-id=${item.id}><i class="ri-shopping-bag-line"></i></span>
   </div>
 `;
   allMenuContainer.appendChild(card);
