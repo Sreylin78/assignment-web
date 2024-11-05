@@ -4,11 +4,15 @@
 .about-3 .container,
 .about-4 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 80px 0;
+  padding-top: 120px;
+}
+
+.about-1 .container{
+  padding-top: 0;
 }
 
 .about-1 .image,
@@ -48,8 +52,6 @@
 .about-2 .info h1,
 .about-3 .info h1,
 .about-4 .info h1{
-  font-size: 26px; 
-  font-weight: bold; 
   text-align: left;
   margin-bottom: 24px; 
 }
@@ -59,8 +61,6 @@
 .about-2 .info p,
 .about-3 .info p,
 .about-4 .info p{
-  font-size: 20px;
-  line-height: 1.7; 
   margin-bottom: 24px;
   text-align: left;
   /* font-weight: bold; */
@@ -93,6 +93,12 @@
 /* Responsive Adjustments */
 @media screen and (max-width: 968px) {
   .about-1 .container,
+  .about-2 .container,
+  .about-3 .container,
+  .about-4 .container {
+    padding-top: 0;
+  }
+  .about-1 .container,
   .about-2 .container {
     flex-direction: column;
     align-items: center;
@@ -110,12 +116,9 @@
   .about-2 .info h1, 
   .about-3 .info h1, 
   .about-4 .info h1 {
-    font-size: 22px;
     text-align: center;
   }
-@media screen and (max-width: 768px) {
-  .section {
-    padding-top: 0;
-  }
 }
+@media screen and (max-width: 768px) {
+
 }
