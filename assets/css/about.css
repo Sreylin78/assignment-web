@@ -1,0 +1,120 @@
+/* About Section Container */
+.about-1 .container,
+.about-2 .container,
+.about-3 .container,
+.about-4 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 80px 0;
+}
+
+.about-1 .image,
+.about-2 .image,
+.about-3 .image,
+.about-4 .image {
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  background: var(--container-color);
+  border-radius: 4px;
+  border: 3px solid var(--white-color); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-1 .image img,
+.about-2 .image img,
+.about-3 .image img,
+.about-4 .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+.about-1 .content,
+.about-2 .content,
+.about-3 .content,
+.about-4 .content {
+  max-width: 470px;
+}
+
+
+.about-1 .info h1,
+.about-2 .info h1,
+.about-3 .info h1,
+.about-4 .info h1{
+  font-size: 26px; 
+  font-weight: bold; 
+  text-align: left;
+  margin-bottom: 24px; 
+}
+
+
+.about-1 .info p,
+.about-2 .info p,
+.about-3 .info p,
+.about-4 .info p{
+  font-size: 20px;
+  line-height: 1.7; 
+  margin-bottom: 24px;
+  text-align: left;
+  /* font-weight: bold; */
+  color: black; 
+}
+.about-1 .button,
+.about-2 .button, 
+.about-3 .button, 
+.about-4 .button {
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--black-color);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-1 .button:hover,
+.about-2 .button:hover, 
+.about-3 .button:hover, 
+.about-4 .button:hover{
+  background: var(--body-color);
+  color: var(--black-color);
+  box-shadow: 0 1px 16px rgba(0,0,0,.2);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 968px) {
+  .about-1 .container,
+  .about-2 .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-1 .image,
+  .about-2 .image, 
+  .about-3 .image, 
+  .about-4 .image{
+    width: 100%;
+    max-width: 450px;
+    order: -1;
+  }
+  .about-1 .info h1,
+  .about-2 .info h1, 
+  .about-3 .info h1, 
+  .about-4 .info h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 0;
+  }
+}
