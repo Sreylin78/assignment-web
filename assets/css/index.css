@@ -1,0 +1,254 @@
+/* Hero */
+#hero.section {
+  padding-top: 80px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.hero-container .content {
+  max-width: 450px;
+}
+
+.hero-container .info {
+  margin-bottom: 2rem;
+}
+
+.hero-container .info h3 {
+  margin-bottom: 0.75rem;
+}
+
+.hero-container .image {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  outline: 4px solid var(--title-color);
+  border: 14px solid transparent;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Menu */
+.menu {
+  background: var(--container-color);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.menu-container .card {
+  background: var(--body-color);
+}
+
+/* About - Contact */
+#about .wrapper,
+#contact .wrapper {
+  background: var(--primary-color);
+  padding: 20px 0;
+}
+
+.about-container,
+.contact-container {
+  display: grid;
+  align-items: center;
+  height: 280px;
+  gap: 15rem;
+  position: relative;
+}
+
+.about-container .content,
+.contact-container .content {
+  max-width: 420px;
+}
+
+.about-container .content p,
+.contact-container .content p {
+  color: var(--body-color);
+  margin-bottom: 3rem;
+}
+
+.about-container .images,
+.contact-container .images {
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  top: 50%;
+  margin: auto 0;
+  transform: translateY(-50%);
+  right: 0;
+  border-radius: 4px;
+  padding: 10px;
+  background: var(--body-color);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-container .images img,
+.contact-container .images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.button-black:hover {
+  background: var(--body-color);
+  color: var(--black-color);
+  border-color: var(--body-color);
+}
+
+/* Open */
+#open {
+  background: var(--container-color);
+}
+
+.open-container {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  align-items: center;
+  border-radius: 16px;
+  background: url("../image/home/event.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 320px;
+}
+
+.open-container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+}
+
+.open-container .content,
+.open-container .info {
+  z-index: var(--z-tooltip);
+}
+
+.open-container .content h2 {
+  color: var(--body-color);
+}
+
+.open-container .info h2 {
+  color: var(--body-color);
+  font-size: 18px;
+}
+
+.open-container .info h2 span {
+  font-family: var(--text-font);
+}
+
+@media screen and (max-width: 1050px) {
+  .hero-container .content {
+    width: 420px;
+  }
+  .hero-container .image {
+    width: 420px;
+    height: 420px;
+  }
+  .open-container {
+    gap: 7rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .hero-container {
+    justify-content: center;
+    gap: 7rem;
+  }
+  .open-container {
+    gap: 3rem;
+  }
+  #menu.section,
+  #open.section {
+    padding-bottom: 180px;
+  }
+  #about .wrapper,
+  #contact .wrapper {
+    padding: 80px 0 60px;
+  }
+  .about-container,
+  .contact-container {
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-container .images,
+  .contact-container .images {
+    width: 320px;
+    height: 320px;
+    top: -0.5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .about-container .content,
+  .contact-container .content{
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero.section {
+    padding-top: 0;
+  }
+  .open-container .content h2 br {
+    display: none;
+  }
+  .hero-container .image {
+    width: 350px;
+    height: 350px;
+  }
+  .open-container {
+    flex-direction: column;
+  }
+  .about-container .images,
+  .contact-container .images {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .hero-container .image {
+    width: 280px;
+    height: 280px;
+  }
+  .about-container .images,
+  .contact-container .images {
+    width: 240px;
+    height: 240px;
+  }
+  .open-container {
+    text-align: center;
+  }
+  .open-container .info h2,
+  .open-container .content h2 {
+    margin: 0 1.5rem;
+    font-size: 16px;
+  }
+  .open-container .content h2 br {
+    display: none;
+  }
+}

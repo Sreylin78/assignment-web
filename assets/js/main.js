@@ -24,9 +24,6 @@ if (links) {
   );
 }
 
-// Scroll Close nav-menu
-window.addEventListener("scroll", () => menu.classList.remove("show-menu"));
-
 // Scroll Header Fixed
 const header = document.getElementById("header");
 

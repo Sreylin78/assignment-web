@@ -8,15 +8,16 @@
       content="ម្ហូបខ្មែរត្រកូលចិននៅតំបន់ស្រស់ស្អាតនៃខេត្តតាកែវ"
     />
     <meta name="keywords" content="restaurant, food, Cambodian cuisine" />
-    
+
     <title>ទំព័រដើម</title>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    
+    <link rel="stylesheet" href="assets/css/index.css" />
+
     <!-- Web-Icon -->
     <link rel="icon" href="assets/image/logo.png" />
-    
+
     <!-- Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
@@ -62,7 +63,93 @@
 
     <!-- Content -->
     <main id="main">
-      <section class="section">
+      <!-- Hero -->
+      <section class="section hero" id="hero">
+        <div class="hero-container container">
+          <div class="content">
+            <div class="info">
+              <h1>ម៉ីម៉ី តាកែវ</h1>
+              <h3>ម្ហូបខ្មែរត្រកូលចិននៅតំបន់ស្រស់ស្អាតនៃខេត្តតាកែវ</h3>
+              <p>
+                ម៉ីម៉ីតាកែវមិនត្រឹមតែជាផ្ទះបាយធម្មតាប៉ុន្តែជាកន្លែងដែលផ្តល់ឱកាសឲ្យ
+                អ្នកទទួលអារម្មណ៍នៃការហូបអាហារខ្មែរបុរាណជាមួយនឹងរសជាតិបុរាណ
+                ពិតប្រាកដជាមួយនឹងសួនច្បារដ៏ស្រស់ស្អាតនិងស្ងប់ស្ងាត់ស្ថិតនៅ
+                កណ្តាលនៃដើមឈើរុក្ខជាតិបៃតងវាជាកន្លែងឱ្យភ្ញៀវភាគច្រើនរីករាយនឹងអារម្មណ៍សម្រាកលំហែជាមួយមនុស្សស្រឡាញ់។
+              </p>
+            </div>
+            <a href="./pages/about.html" class="button">លម្អិតអំពីហាងយើង</a>
+          </div>
+          <div class="image">
+            <img src="assets/image/home/hero.jpg" alt="Hero Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section class="section menu" id="menu">
+        <h1 class="section-title">មុខម្ហូបដែលពេញនិយម</h1>
+
+        <div class="menu-container container" id="menuContainer"></div>
+      </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <div class="wrapper">
+          <div class="about-container container">
+            <div class="content">
+              <p>
+                សូមរីករាយជាមួយបទពិសោធន៍នៃការទទួលទានអាហារខ្មែរដ៏ឆ្ងាញ់បំផុតនៅក្នុងខេត្តតាកែវដែលអាថ៌កំបាំងនៃអតីតកាលឥឡូវនេះមានសម្រាប់អ្នកទាំងអស់គ្នាក្នុងការចែករំលែក។
+              </p>
+              <a href="./pages/about.html" class="button button-black"
+                >លម្អិតអំពីយើង</a
+              >
+            </div>
+            <div class="images">
+              <img src="assets/image/home/about.webp" alt="About Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Opening -->
+      <section id="open" class="section open">
+        <div class="open-container container">
+          <div class="content">
+            <h2>
+              ហាងរបស់យើងបើក
+              <br />
+              ទទួលភ្ញៀវរៀងរាល់ថ្ងៃ
+            </h2>
+          </div>
+          <div class="info">
+            <h2>
+              ថ្ងៃច័ន្ទ ដល់ ថ្ងៃសុក្រ: <span>10:00 ព្រឹក - 10:00 យប់</span>
+            </h2>
+            <h2>
+              ថ្ងៃសៅរ៍ និង ថ្ងៃអាទិត្យ: <span>11:00 ព្រឹក - 11:00 យប់</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <div class="wrapper">
+          <div class="contact-container container">
+            <div class="content">
+              <p>
+                ព៌ត័មានបន្ថែមសូមចូលទៅទំនាក់ទំនងជាមួយយើងខ្ញុំនៅទំព័រទំនាក់ទំនង
+                ដើម្បីស្វែងយល់បន្ថែម និងដាក់សំណួររបស់អ្នក។
+              </p>
+              <a href="./pages/about.html" class="button button-black"
+                >ទាក់ទងយើង</a
+              >
+            </div>
+            <div class="images">
+              <img src="assets/image/home/contact.jpg" alt="About Image" />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -76,23 +163,29 @@
         </div>
 
         <ul class="f-list">
-          <li><a href="#" class="links">ទំព័រដើម</a></li>
-          <li><a href="#" class="links">មីនុយ</a></li>
-          <li><a href="#" class="links">អំពីយើង</a></li>
-          <li><a href="#" class="links">សេវាកម្ម</a></li>
-          <li><a href="#" class="links">ទំនាក់ទំនង</a></li>
+          <li><a href="#" class="links active">ទំព័រដើម</a></li>
+          <li><a href="./pages/menu.html" class="links">មីនុយ</a></li>
+          <li><a href="./pages/about.html" class="links">អំពីយើង</a></li>
+          <li><a href="./pages/services.html" class="links">សេវាកម្ម</a></li>
+          <li><a href="./pages/contact.html" class="links">ទំនាក់ទំនង</a></li>
         </ul>
 
         <ul class="f-socials">
-          <li><a href="#"> <i class="ri-facebook-fill"></i> </a></li>
-          <li><a href="#"> <i class="ri-telegram-2-fill"></i> </a></li>
-          <li><a href="#"> <i class="ri-tiktok-fill"></i> </a></li>
+          <li>
+            <a href="#"> <i class="ri-facebook-fill"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
+          </li>
         </ul>
       </div>
       <div class="copy-right container">
         <p>
           &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team 1</a>
+          <a class="links" href="#">Team MeyMey</a>
         </p>
       </div>
     </footer>
@@ -104,5 +197,6 @@
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

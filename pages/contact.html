@@ -9,6 +9,13 @@
     />
     <meta name="keywords" content="restaurant, food, Cambodian cuisine" />
     <title>ទំនាក់ទំនងផេក</title>
+
+    <!-- SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
@@ -117,8 +124,6 @@
               <textarea name="message" placeholder="" id="message"></textarea>
             </div>
             <div class="btn">
-              <span class="success-message"></span>
-              <span class="error-message"></span>
               <button type="submit" value="send" class="button">
                 ផ្ញើរសារ
               </button>
@@ -143,13 +148,13 @@
           <div class="faq-content faq-open">
             <div class="quest">
               <div>
-                <h1>តើខ្ញុំអាចកក់តុនៅមេយមេយដោយរបៀបណា?</h1>
+                <h2>តើខ្ញុំអាចកក់តុនៅមេយមេយដោយរបៀបណា?</h2>
               </div>
               <i class="ri-arrow-down-s-line"></i>
             </div>
             <div class="answ">
               <span
-                >ចម្លើយ: អ្នកអាចធ្វើការកក់តុនៅមេយមេយ
+                >ចម្លើយ: អ្នកអាចធ្វើការកក់តុនៅមីមី
                 ភោជនីយដ្ឋានតាមរយៈគេហទំព័ររបស់យើង www.meymeyrestaurant.com
                 ឬតាមការហៅទូរស័ព្ទផ្ទាល់ទៅលេខ (+៨៥៥) ១២៣ ៤៥៦​​ ៧៨៩០។
               </span>
@@ -159,9 +164,9 @@
           <div class="faq-content faq-close">
             <div class="quest">
               <div>
-                <h1>
+                <h2>
                   តើមានបន្ទប់អាហារឯកជនសម្រាប់ព្រឹត្តិការណ៍ចំនួនប៉ុន្មាននាក់?
-                </h1>
+                </h2>
               </div>
               <i class="ri-arrow-down-s-line"></i>
             </div>
@@ -177,10 +182,10 @@
           <div class="faq-content faq-close">
             <div class="quest">
               <div>
-                <h1>
+                <h2>
                   តើនៅភោជនីយដ្ឋានមានមុខម្ហូបសមស្របសម្រាប់អ្នកធ្វើចំណីអាហារបួស
                   ឬអាហារបំប៉នទេ?
-                </h1>
+                </h2>
               </div>
               <i class="ri-arrow-down-s-line"></i>
             </div>
@@ -196,7 +201,7 @@
           <div class="faq-content faq-close">
             <div class="quest">
               <div>
-                <h1>តើមានបញ្ចុះតម្លៃឬឯកសារផ្សេងៗសម្រាប់ក្រុមធំៗទេ?</h1>
+                <h2>តើមានបញ្ចុះតម្លៃឬឯកសារផ្សេងៗសម្រាប់ក្រុមធំៗទេ?</h2>
               </div>
               <i class="ri-arrow-down-s-line"></i>
             </div>
@@ -212,7 +217,7 @@
           <div class="faq-content faq-close">
             <div class="quest">
               <div>
-                <h1>តើមានកន្លែងចតរថយន្តសម្រាប់ភ្ញៀវទេ?</h1>
+                <h2>តើមានកន្លែងចតរថយន្តសម្រាប់ភ្ញៀវទេ?</h2>
               </div>
               <i class="ri-arrow-down-s-line"></i>
             </div>
@@ -228,7 +233,7 @@
           <div class="faq-content faq-close">
             <div class="quest">
               <div>
-                <h1>តើមានសេវាកម្មដឹកជញ្ជូនម្ហូបឬទេ?</h1>
+                <h2>តើមានសេវាកម្មដឹកជញ្ជូនម្ហូបឬទេ?</h2>
               </div>
               <i class="ri-arrow-down-s-line"></i>
             </div>
@@ -254,11 +259,11 @@
         </div>
 
         <ul class="f-list">
-          <li><a href="#" class="links">ទំព័រដើម</a></li>
-          <li><a href="#" class="links">មីនុយ</a></li>
-          <li><a href="#" class="links">អំពីយើង</a></li>
-          <li><a href="#" class="links">សេវាកម្ម</a></li>
-          <li><a href="#" class="links">ទំនាក់ទំនង</a></li>
+          <li><a href="../index.html" class="links">ទំព័រដើម</a></li>
+          <li><a href="./menu.html" class="links">មីនុយ</a></li>
+          <li><a href="./about.html" class="links">អំពីយើង</a></li>
+          <li><a href="./services.html" class="links">សេវាកម្ម</a></li>
+          <li><a href="#" class="links active">ទំនាក់ទំនង</a></li>
         </ul>
 
         <ul class="f-socials">
@@ -276,7 +281,7 @@
       <div class="copy-right container">
         <p>
           &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team 1</a>
+          <a class="links" href="#">Team MeyMey</a>
         </p>
       </div>
     </footer>
@@ -286,6 +291,9 @@
       <i class="ri-arrow-up-line"></i>
     </a>
 
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    
     <!-- EmailJS -->
     <script
       type="text/javascript"
