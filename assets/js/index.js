@@ -1,7 +1,7 @@
 const popularItems = [
   {
     id: 2,
-    image: "../assets/image/menu/menu-2.jpg",
+    image: "./assets/image/menu/menu-2.jpg",
     title: "ខ្យងផ្លិតឆាម្រេចខ្ទី",
     description: "Description for ខ្យងផ្លិតឆាម្រេចខ្ទី",
     price: "៥០.០០០៛",
@@ -9,7 +9,7 @@ const popularItems = [
   },
   {
     id: 8,
-    image: "../assets/image/menu/menu-8.jpg",
+    image: "./assets/image/menu/menu-8.jpg",
     title: "ស្ងោរជ្រក់បង្កង",
     description: "Description for ស្ងោរជ្រក់បង្កង",
     price: "១៦០.០០០៛",
@@ -17,7 +17,7 @@ const popularItems = [
   },
   {
     id: 14,
-    image: "../assets/image/menu/menu-14.jpg",
+    image: "./assets/image/menu/menu-14.jpg",
     title: "បាយឆាគ្រឿងសមុទ្រ",
     description: "Description for បាយឆាគ្រឿងសមុទ្រ",
     price: "៦៣.០០០៛",
@@ -25,7 +25,7 @@ const popularItems = [
   },
   {
     id: 16,
-    image: "../assets/image/menu/menu-16.jpg",
+    image: "./assets/image/menu/menu-16.jpg",
     title: "ប្រហុកខ្ទិះ",
     description: "Description for ប្រហុកខ្ទិះ",
     price: "៥៤,០០០៛",
