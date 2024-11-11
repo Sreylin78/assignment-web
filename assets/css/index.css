@@ -26,9 +26,8 @@
 .hero-container .image {
   width: 440px;
   height: 440px;
-  border-radius: 50%;
-  outline: 4px solid var(--title-color);
-  border: 14px solid transparent;
+  border-radius: 8px;
+  padding: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -36,7 +35,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 8px;
 }
 
 /* Menu */
@@ -92,7 +91,7 @@
   margin: auto 0;
   transform: translateY(-50%);
   right: 0;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 10px;
   background: var(--body-color);
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
@@ -102,7 +101,7 @@
 .contact-container .images img {
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .button-black:hover {
@@ -121,7 +120,7 @@
   justify-content: center;
   gap: 12rem;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 8px;
   background: url("../image/home/event.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +137,7 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .open-container .content,
@@ -180,33 +179,6 @@
   .open-container {
     gap: 3rem;
   }
-  #menu.section,
-  #open.section {
-    padding-bottom: 180px;
-  }
-  #about .wrapper,
-  #contact .wrapper {
-    padding: 80px 0 60px;
-  }
-  .about-container,
-  .contact-container {
-    align-items: end;
-    justify-content: center;
-    text-align: center;
-  }
-  .about-container .images,
-  .contact-container .images {
-    width: 320px;
-    height: 320px;
-    top: -0.5rem;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-  }
-  .about-container .content,
-  .contact-container .content{
-    max-width: 320px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -223,10 +195,32 @@
   .open-container {
     flex-direction: column;
   }
+  .about-container,
+  .contact-container {
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+  }
   .about-container .images,
   .contact-container .images {
     width: 280px;
     height: 280px;
+    top: -0.4rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .about-container .content,
+  .contact-container .content {
+    max-width: 320px;
+  }
+  .about-container .content p,
+  .contact-container .content p {
+    margin-bottom: 1.5rem;
+  }
+  #about .wrapper,
+  #contact .wrapper {
+    padding: 80px 0 60px;
   }
 }
 
@@ -250,5 +244,21 @@
   }
   .open-container .content h2 br {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-container .image {
+    width: 220px;
+    height: 220px;
+  }
+  .about-container .images,
+  .contact-container .images {
+    width: 180px;
+    height: 180px;
+  }
+  .about-container,
+  .contact-container {
+    height: 220px;
   }
 }

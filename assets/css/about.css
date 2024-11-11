@@ -11,83 +11,140 @@
   padding-top: 120px;
 }
 
-.about-1 .container{
+.about-1 .container {
   padding-top: 0;
 }
 
-.about-1 .image,
+.about .image {
+  width: 480px;
+  height: 480px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--container-color);
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
+}
+
 .about-2 .image,
 .about-3 .image,
 .about-4 .image {
-  width: 600px;
-  height: auto;
-  padding: 20px;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+  order: 2;
+  background: var(--body-color);
+}
+
+.about .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about .content {
+  width: 450px;
+}
+
+.about .info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.about-2,
+.about-4 {
   background: var(--container-color);
   border-radius: 4px;
-  border: 3px solid var(--white-color); 
+  border: 3px solid var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.about-1 .image img,
-.about-2 .image img,
-.about-3 .image img,
-.about-4 .image img {
+
+.chef-container .card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  gap: 2rem;
+  cursor: pointer;
+  position: relative;
+  background: var(--container-color);
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.chef-container .image {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.chef-container .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
 
-
-.about-1 .content,
-.about-2 .content,
-.about-3 .content,
-.about-4 .content {
-  max-width: 470px;
+.chef-container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 70%;
+  right: 0;
+  left: 0;
+  margin: 0 auto 0.25rem;
+  padding: 10px 20px;
+  bottom: 5rem;
+  border-radius: 8px;
+  background: var(--primary-color);
+  transition: 0.4s;
 }
 
-
-.about-1 .info h1,
-.about-2 .info h1,
-.about-3 .info h1,
-.about-4 .info h1{
-  text-align: left;
-  margin-bottom: 24px; 
+.chef-container .info h3 {
+  font-family: var(--title-font);
+  font-size: 14px;
 }
 
-
-.about-1 .info p,
-.about-2 .info p,
-.about-3 .info p,
-.about-4 .info p{
-  margin-bottom: 24px;
-  text-align: left;
-  /* font-weight: bold; */
-  color: black; 
+.chef-container .info h3,
+.chef-container .info span {
+  color: var(--body-color);
 }
-.about-1 .button,
-.about-2 .button, 
-.about-3 .button, 
-.about-4 .button {
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--black-color);
-  color: white;
-  cursor: pointer;
-  text-align: center;
-  font-weight: 700;
+
+.chef-container .info span {
+  font-weight: 600;
+}
+
+.chef-container .socials {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.chef-container .socials a {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-content: center;
+  background-color: var(--container-color-alt);
+  border-radius: 8px;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  transition: 0.4s;
 }
 
 .about-1 .button:hover,
-.about-2 .button:hover, 
-.about-3 .button:hover, 
-.about-4 .button:hover{
+.about-2 .button:hover,
+.about-3 .button:hover,
+.about-4 .button:hover {
   background: var(--body-color);
   color: var(--black-color);
-  box-shadow: 0 1px 16px rgba(0,0,0,.2);
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Adjustments */
@@ -105,20 +162,43 @@
     text-align: center;
   }
   .about-1 .image,
-  .about-2 .image, 
-  .about-3 .image, 
-  .about-4 .image{
+  .about-2 .image,
+  .about-3 .image,
+  .about-4 .image {
     width: 100%;
     max-width: 450px;
     order: -1;
   }
   .about-1 .info h1,
-  .about-2 .info h1, 
-  .about-3 .info h1, 
+  .about-2 .info h1,
+  .about-3 .info h1,
   .about-4 .info h1 {
     text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
+  #about.section {
+    padding-top: 0;
+  }
+}
 
+@media screen and (max-width: 468px) {
+  .about .image {
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+  }
+  .about .content {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .about .image {
+    width: 240px;
+    height: 240px;
+  }
+  .about .content {
+    width: 250px;
+  }
 }

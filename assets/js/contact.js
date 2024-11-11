@@ -21,7 +21,7 @@ window.onload = function () {
           showCloseButton: true,
           timer: 5000,
           customClass: {
-            confirmButton: "custom-confirm-button-green", 
+            confirmButton: "custom-confirm-button-green",
           },
         });
 
@@ -40,7 +40,7 @@ window.onload = function () {
           padding: "20px",
           showCloseButton: true,
           customClass: {
-            confirmButton: "custom-confirm-button-red", 
+            confirmButton: "custom-confirm-button-red",
           },
         });
       }
@@ -55,13 +55,15 @@ const faqHeader = document.querySelectorAll(".quest");
 const toggleFaqs = function () {
   let itemClass = this.parentNode.className;
 
-  for (let i = 0; i < faqContent.length; i++) {
-    faqContent[i].className = "faq-content faq-close";
-  }
+  // Click close all faq-content that's already open
+  // for (let i = 0; i < faqContent.length; i++) {
+  //   faqContent[i].className = "faq-content faq-close";
+  // }
 
-  if (itemClass === "faq-content faq-close") {
-    this.parentNode.className = "faq-content faq-open";
-  }
+  // Open and Close faq-content
+  itemClass === "faq-content faq-close"
+    ? (this.parentNode.className = "faq-content faq-open")
+    : (this.parentNode.className = "faq-content faq-close");
 };
 
 faqHeader.forEach((item) => {
