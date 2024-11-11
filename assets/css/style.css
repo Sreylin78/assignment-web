@@ -312,20 +312,6 @@ ul {
   font-size: 1.5rem;
 }
 
-#nav-toggle {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background: var(--container-color);
-  color: var(--title-color);
-  border-radius: 8px;
-  transition: 0.4s;
-}
-
-#nav-toggle:hover {
-  background: var(--container-color-alt);
-}
-
 /* Header Fixed */
 #header.fixed-header {
   background: var(--black-color);

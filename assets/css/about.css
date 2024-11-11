@@ -1,14 +1,15 @@
-/* About Section Container */
-.about-1 .container,
-.about-2 .container,
-.about-3 .container,
-.about-4 .container {
+/* About */
+#about {
+  padding-bottom: 0;
+}
+
+.about .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding-top: 120px;
+  padding: 120px 0;
+  gap: 4rem;
 }
 
 .about-1 .container {
@@ -26,7 +27,6 @@
 }
 
 .about-2 .image,
-.about-3 .image,
 .about-4 .image {
   box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
   order: 2;
@@ -53,132 +53,124 @@
 .about-2,
 .about-4 {
   background: var(--container-color);
-  border-radius: 4px;
-  border: 3px solid var(--white-color);
+}
+
+.about-2 .image,
+.about-4 .image {
+  order: -1;
+}
+
+/* Chef */
+.chef-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-.chef-container .card {
-  width: 240px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  gap: 2rem;
-  cursor: pointer;
-  position: relative;
+/* Contact */
+#contact {
   background: var(--container-color);
-  overflow: hidden;
-  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.chef-container .image {
-  width: 100%;
-  height: 180px;
+#contact .wrapper {
+  background: var(--primary-color);
+  padding: 20px 0;
+}
+
+.contact-container {
+  display: grid;
+  align-items: center;
+  height: 280px;
+  gap: 15rem;
+  position: relative;
+}
+
+.contact-container .content {
+  max-width: 420px;
+}
+
+.contact-container .content p {
+  color: var(--body-color);
+  margin-bottom: 3rem;
+}
+
+.contact-container .images {
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  top: 50%;
+  margin: auto 0;
+  transform: translateY(-50%);
+  right: 0;
   border-radius: 8px;
+  padding: 10px;
+  background: var(--body-color);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
 
-.chef-container .image img {
+.contact-container .images img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.chef-container .info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  width: 70%;
-  right: 0;
-  left: 0;
-  margin: 0 auto 0.25rem;
-  padding: 10px 20px;
-  bottom: 5rem;
   border-radius: 8px;
-  background: var(--primary-color);
-  transition: 0.4s;
 }
 
-.chef-container .info h3 {
-  font-family: var(--title-font);
-  font-size: 14px;
-}
-
-.chef-container .info h3,
-.chef-container .info span {
-  color: var(--body-color);
-}
-
-.chef-container .info span {
-  font-weight: 600;
-}
-
-.chef-container .socials {
-  margin: 1rem 0;
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-}
-
-.chef-container .socials a {
-  width: 35px;
-  height: 35px;
-  display: grid;
-  place-content: center;
-  background-color: var(--container-color-alt);
-  border-radius: 8px;
-  font-size: 1.25rem;
-  color: var(--text-color);
-  transition: 0.4s;
-}
-
-.about-1 .button:hover,
-.about-2 .button:hover,
-.about-3 .button:hover,
-.about-4 .button:hover {
+.button-black:hover {
   background: var(--body-color);
   color: var(--black-color);
-  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
+  border-color: var(--body-color);
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 968px) {
-  .about-1 .container,
-  .about-2 .container,
-  .about-3 .container,
-  .about-4 .container {
-    padding-top: 0;
+@media screen and (max-width: 1180px) {
+  .about .image {
+    width: 380px;
+    height: 380px;
   }
-  .about-1 .container,
-  .about-2 .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+@media screen and (max-width: 968px) {
+  .about .container {
+    justify-content: center;
+  }
+  .about .image {
+    width: 380px;
+    height: 380px;
   }
   .about-1 .image,
-  .about-2 .image,
-  .about-3 .image,
-  .about-4 .image {
-    width: 100%;
-    max-width: 450px;
+  .about-3 .image {
     order: -1;
   }
-  .about-1 .info h1,
-  .about-2 .info h1,
-  .about-3 .info h1,
-  .about-4 .info h1 {
+  .about .info h1 {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   #about.section {
     padding-top: 0;
+  }
+  .contact-container {
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-container .images {
+    width: 280px;
+    height: 280px;
+    top: -0.4rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .contact-container .content {
+    max-width: 320px;
+  }
+  .contact-container .content p {
+    margin-bottom: 1.5rem;
+  }
+  #contact .wrapper {
+    padding: 80px 0 60px;
   }
 }
 
@@ -191,6 +183,13 @@
   .about .content {
     width: 300px;
   }
+  .contact-container .images {
+    width: 240px;
+    height: 240px;
+  }
+  .chef-card p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -200,5 +199,12 @@
   }
   .about .content {
     width: 250px;
+  }
+  .contact-container .images {
+    width: 180px;
+    height: 180px;
+  }
+  .contact-container {
+    height: 220px;
   }
 }
