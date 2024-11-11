@@ -56,20 +56,3 @@ const yearFooter = document.getElementById("year");
 if (yearFooter) {
   yearFooter.textContent = new Date().getFullYear();
 }
-
-// Cart
-const cartOpen = document.getElementById("nav-bag");
-const cartContainer = document.getElementById("cart");
-const cartClose = document.getElementById("cart-close");
-
-if (cartOpen) {
-  cartOpen.addEventListener("click", () => {
-    cartContainer.classList.toggle("show-cart");
-  });
-}
-
-if (cartClose) {
-  cartClose.addEventListener("click", () => {
-    cartContainer.classList.remove("show-cart");
-  });
-}

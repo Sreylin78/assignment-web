@@ -51,9 +51,6 @@ popularItems.forEach((item) => {
     </div>
     <div class="action">
       <span>តម្លៃ <b>${item.price}</b></span>
-      <span id="add-cart" item-id=${
-        item.id
-      }> <i class="ri-shopping-bag-line"></i> </span>
     </div>
   `;
   popularMenu.appendChild(card);
