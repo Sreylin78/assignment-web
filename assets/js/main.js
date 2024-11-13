@@ -1,10 +1,10 @@
 // Open and Close nav-menu
 const menu = document.getElementById("nav-menu"),
   close = document.getElementById("nav-close"),
-  toggle = document.getElementById("nav-toggle");
+  open = document.getElementById("nav-open");
 
-if (toggle) {
-  toggle.addEventListener("click", () => {
+if (open) {
+  open.addEventListener("click", () => {
     menu.classList.add("show-menu");
   });
 }
@@ -16,7 +16,7 @@ if (close) {
 }
 
 // Click nav-link close nav-menu
-const links = document.querySelectorAll("#nav-menu ul li a");
+const links = document.querySelectorAll(".nav-link");
 
 if (links) {
   links.forEach((link) =>
@@ -42,7 +42,7 @@ const scrollup = document.getElementById("scrollup");
 
 if (scrollup) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 500) {
+    if (window.scrollY >= 180) {
       scrollup.classList.add("show-scrollup");
     } else {
       scrollup.classList.remove("show-scrollup");
@@ -50,9 +50,9 @@ if (scrollup) {
   });
 }
 
-// Year Footer
-const yearFooter = document.getElementById("year");
+// Footer Year
+const year = document.getElementById("year");
 
-if (yearFooter) {
-  yearFooter.textContent = new Date().getFullYear();
+if (year) {
+  year.innerHTML = new Date().getFullYear();
 }
