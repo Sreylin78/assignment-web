@@ -1,0 +1,31 @@
+/* About */
+.services-container {
+  padding: 40px 0;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-content,
+.services-image {
+  flex: 1;
+}
+
+.services-content {
+  max-width: 725px;
+  h1 {
+    font-size: var(--fs-30);
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: var(--fs-25);
+    margin-bottom: 40px;
+  }
+}
+
+#services-2 {
+  background: var(--container-color);
+}
