@@ -10,11 +10,13 @@
   --container-color: #0f0f0f;
   --body-color: #0b0b0c;
   --black-color: #282828;
-  --text-color: #ffffff;
+  --white-color: #ffffff;
+  --white-color-alt: #dfdfdf;
 
   --fw-400: 400;
   --fw-700: 700;
 
+  --fs-28: 28px;
   --fs-24: 24px;
   --fs-20: 20px;
   --fs-16: 16px;
@@ -40,7 +42,7 @@ html {
 
 body {
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: var(--white-color);
   font-size: var(--normal-font-size);
   font-weight: var(--fw-400);
 }
@@ -120,7 +122,7 @@ img {
 
 .nav-link {
   padding: 10px 30px;
-  color: var(--text-color);
+  color: var(--white-color);
   transition: 0.4s ease-in-out;
   border: 2px solid transparent;
   border-radius: 2rem;
@@ -140,6 +142,28 @@ img {
   position: fixed;
   top: 0;
   box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Button */
+.btn {
+  padding: 8px 20px;
+  font-style: var(--fs-20);
+  color: var(--white-color);
+  border-radius: 1.25rem;
+  background: var(--primary-color);
+  transition: 0.4s;
+  &:hover {
+    background: var(--primary-color-alt);
+    color: var(--white-color);
+  }
+}
+
+.btn-white {
+  background: var(--white-color);
+  color: var(--black-color);
+  &:hover {
+    background: var(--white-color-alt);
+  }
 }
 
 /* Footer */
@@ -176,21 +200,17 @@ img {
 
 .footer-social-icon i {
   font-size: 40px;
-  color: var(--text-color);
+  color: var(--white-color);
   transition: 0.4s linear;
   &:hover {
-    color: var(--primary-color);
+    color: var(--white-color-alt);
   }
 }
 
 .footer-app-icon {
-  width: 120px;
-  padding: 9px 20px;
-  background: var(--text-color);
   display: flex;
   align-items: center;
   gap: 10px;
-  border-radius: 1.25rem;
 }
 
 .footer-app-icon i,
@@ -200,10 +220,10 @@ img {
 }
 
 .footer-link a {
-  color: var(--text-color);
+  color: var(--white-color);
   transition: 0.4s linear;
   &:hover {
-    color: var(--primary-color);
+    color: var(--white-color-alt);
   }
 }
 
@@ -224,8 +244,8 @@ img {
   display: grid;
   border-radius: 1rem;
   place-content: center;
-  font-size: var(--fs-24);
-  color: var(--text-color);
+  font-size: var(--fs-20);
+  color: var(--white-color);
   transition: 0.4s linear;
   &:hover {
     transform: translateY(-0.25rem);
