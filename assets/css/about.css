@@ -30,3 +30,66 @@
 #about-4 {
   background: var(--container-color);
 }
+
+@media screen and (max-width: 998px) {
+  .about-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .about-content,
+  .about-image {
+    width: 550px;
+  }
+  .about-image {
+    min-height: 523px;
+
+    img {
+      height: 523px;
+    }
+  }
+  #about-2 .about-image {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content,
+  .about-image {
+    width: 450px;
+  }
+  .about-image {
+    min-height: 423px;
+
+    img {
+      height: 423px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about-content,
+  .about-image {
+    width: 350px;
+  }
+  .about-image {
+    min-height: 323px;
+
+    img {
+      height: 323px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .about-content,
+  .about-image {
+    width: 300px;
+  }
+  .about-image {
+    min-height: 277px;
+
+    img {
+      height: 277px;
+    }
+  }
+}
