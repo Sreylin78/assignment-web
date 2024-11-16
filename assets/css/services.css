@@ -29,3 +29,66 @@
 #services-2 {
   background: var(--container-color);
 }
+
+@media screen and (max-width: 998px) {
+  .services-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .services-content,
+  .services-image {
+    width: 550px;
+  }
+  .services-image {
+    min-height: 523px;
+
+    img {
+      height: 523px;
+    }
+  }
+  #services-2 .services-image {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-content,
+  .services-image {
+    width: 450px;
+  }
+  .services-image {
+    min-height: 423px;
+
+    img {
+      height: 423px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .services-content,
+  .services-image {
+    width: 350px;
+  }
+  .services-image {
+    min-height: 323px;
+
+    img {
+      height: 323px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .services-content,
+  .services-image {
+    width: 300px;
+  }
+  .services-image {
+    min-height: 277px;
+
+    img {
+      height: 277px;
+    }
+  }
+}
