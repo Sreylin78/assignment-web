@@ -19,6 +19,7 @@
   --fs-30: 30px;
   --fs-25: 25px;
   --fs-20: 20px;
+  --fs-18: 18px;
   --fs-15: 15px;
 
   --z-fixed: 100;
@@ -137,10 +138,6 @@ input {
 }
 
 /* Poster */
-.poster {
-  padding: 60px 0 20px;
-}
-
 .poster-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -239,7 +236,7 @@ input {
 .btn {
   padding: 10px 24px;
   font-size: var(--fs-25);
-  color: var(--black-color);
+  color: var(--body-color);
   border-radius: 1.5rem;
   background: var(--primary-color);
   transition: 0.4s;
