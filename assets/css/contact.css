@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
   flex-wrap: wrap;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .contact-content {
-  width: 725px;
+  max-width: 725px;
 
   h1 {
     color: var(--primary-color);

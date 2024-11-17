@@ -68,6 +68,17 @@ input {
   outline: none;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #292323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
 /* Class */
 .main {
   overflow: hidden;
