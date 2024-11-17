@@ -291,7 +291,7 @@ input {
 }
 
 .footer-social-icon i {
-  font-size: 40px;
+  font-size: var(--fs-30);
   color: var(--white-color);
   transition: 0.4s;
   &:hover {
@@ -307,8 +307,12 @@ input {
 
 .footer-app-icon i,
 .footer-app-icon span {
-  font-size: var(--fs-14);
+  font-size: var(--fs-15);
   color: var(--body-color);
+}
+
+.footer-app-icon i {
+  font-size: var(--fs-18);
 }
 
 .footer-link a {
@@ -320,7 +324,7 @@ input {
 }
 
 .footer-copy {
-  font-size: var(--fs-14);
+  font-size: var(--fs-15);
   text-align: center;
 }
 
@@ -429,6 +433,9 @@ input {
     img {
       height: 250px;
     }
+  }
+  .footer-app-icon {
+    padding: 8px 16px;
   }
 }
 
