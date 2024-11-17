@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .services-container {
@@ -57,5 +57,80 @@
   p {
     font-size: var(--fs-25);
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .services-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .hero-content,
+  .hero-image,
+  .services-content {
+    width: 550px;
+  }
+  .hero-image,
+  .services-image {
+    min-height: 523px;
+
+    img {
+      height: 523px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content,
+  .hero-image,
+  .services-image,
+  .services-content {
+    width: 450px;
+  }
+  .hero-image,
+  .services-image {
+    min-height: 423px;
+
+    img {
+      height: 423px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hero-content,
+  .hero-image,
+  .services-content,
+  .services-image {
+    width: 350px;
+  }
+  .hero-image,
+  .services-image {
+    min-height: 323px;
+
+    img {
+      height: 323px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .hero-content,
+  .hero-image,
+  .services-content,
+  .services-image {
+    width: 300px;
+  }
+  .hero-image,
+  .services-image {
+    min-height: 277px;
+
+    img {
+      height: 277px;
+    }
   }
 }
