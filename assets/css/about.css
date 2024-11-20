@@ -47,8 +47,9 @@
       height: 523px;
     }
   }
-  #about-2 .about-image {
-    order: 2;
+  #about-1 .about-image,
+  #about-3 .about-image {
+    order: -1;
   }
 }
 
@@ -76,6 +77,11 @@
 
     img {
       height: 323px;
+    }
+  }
+  .about-content {
+    h1 {
+      margin-bottom: 20px;
     }
   }
 }

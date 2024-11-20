@@ -45,6 +45,7 @@ body {
   color: var(--white-color);
   font-size: var(--normal-font-size);
   font-weight: var(--fw-400);
+  font-family: var(--body-font);
 }
 
 a {
@@ -152,6 +153,7 @@ input {
 .poster-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 60px 0;
 
   img {
     height: 223px;
@@ -328,6 +330,7 @@ input {
 
 .footer-link a {
   color: var(--white-color);
+  font-size: var(--fs-18);
   transition: 0.4s;
   &:hover {
     color: var(--white-color-alt);
@@ -420,6 +423,19 @@ input {
       height: 180px;
     }
   }
+  .footer {
+    padding: 80px 0 0;
+  }
+  .footer-title {
+    margin-bottom: 80px;
+  }
+  .footer-container {
+    padding: 60px 0;
+    gap: 30px;
+  }
+  .footer-app-icon {
+    padding: 8px 16px;
+  }
   .card {
     width: 340px;
     img {
@@ -448,11 +464,20 @@ input {
   .footer-app-icon {
     padding: 8px 16px;
   }
+  .footer {
+    padding: 60px 0 0;
+  }
+  .footer-title {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
     margin-inline: 20px;
+  }
+  .section {
+    padding: 40px 20px;
   }
   :root {
     --fs-30: 25px;
@@ -470,13 +495,37 @@ input {
   .nav-logo span {
     font-size: var(--fs-16);
   }
+  .container-image {
+    border-radius: 16px;
+
+    img {
+      border-radius: 16px;
+    }
+  }
+  .card {
+    border-radius: 16px;
+    img {
+      border-radius: 16px;
+    }
+  }
   .poster-container {
+    margin: 40px 0;
+
     img {
       height: 120px;
     }
   }
   .poster-content {
     max-width: 450px;
+  }
+  .footer {
+    padding: 40px 0 0;
+  }
+  .footer-title {
+    margin-bottom: 40px;
+  }
+  .footer-container {
+    padding: 40px 0;
   }
 }
 
@@ -491,10 +540,11 @@ input {
   .poster-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
   }
   .poster-content {
     max-width: 320px;
-
+    margin: 40px auto;
     h1 {
       margin: 10px 0;
     }
@@ -503,17 +553,17 @@ input {
       display: none;
     }
   }
+  .scrollup {
+    right: 1.25rem;
+  }
+  .show-scrollup {
+    bottom: 1.75rem;
+  }
 }
 
 @media screen and (max-width: 468px) {
   .nav-menu {
     width: 100%;
     border-radius: 0 0 0 0;
-  }
-  .scrollup {
-    right: 1.5rem;
-  }
-  .show-scrollup {
-    bottom: 1.75rem;
   }
 }

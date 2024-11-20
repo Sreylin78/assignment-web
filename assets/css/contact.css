@@ -244,7 +244,11 @@
     grid-template-columns: 450px;
   }
   .contact-form {
+    border-radius: 1rem;
     padding: 20px;
+  }
+  .faqs {
+    border-radius: 1rem;
   }
 }
 
