@@ -21,7 +21,7 @@ window.onload = function () {
             color: "#ffffff",
             padding: "20px",
             showCloseButton: true,
-            timer: 1000,
+            timer: 10000,
             customClass: {
               confirmButton: "custom-confirm-button-green",
             },
