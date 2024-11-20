@@ -328,6 +328,7 @@ input {
 
 .footer-link a {
   color: var(--white-color);
+  font-size: var(--fs-18);
   transition: 0.4s;
   &:hover {
     color: var(--white-color-alt);
@@ -420,6 +421,19 @@ input {
       height: 180px;
     }
   }
+  .footer {
+    padding: 80px 0 0;
+  }
+  .footer-title {
+    margin-bottom: 80px;
+  }
+  .footer-container {
+    padding: 60px 0;
+    gap: 30px;
+  }
+  .footer-app-icon {
+    padding: 8px 16px;
+  }
   .card {
     width: 340px;
     img {
@@ -454,6 +468,9 @@ input {
   .container {
     margin-inline: 20px;
   }
+  .section {
+    padding: 40px 20px;
+  }
   :root {
     --fs-30: 25px;
     --fs-25: 20px;
@@ -481,6 +498,9 @@ input {
 }
 
 @media screen and (max-width: 568px) {
+  .section {
+    padding: 20px 20px;
+  }
   :root {
     --fs-30: 22px;
     --fs-25: 18px;
@@ -494,7 +514,7 @@ input {
   }
   .poster-content {
     max-width: 320px;
-
+    margin: 40px auto;
     h1 {
       margin: 10px 0;
     }
@@ -503,17 +523,17 @@ input {
       display: none;
     }
   }
+  .scrollup {
+    right: 1.25rem;
+  }
+  .show-scrollup {
+    bottom: 1.75rem;
+  }
 }
 
 @media screen and (max-width: 468px) {
   .nav-menu {
     width: 100%;
     border-radius: 0 0 0 0;
-  }
-  .scrollup {
-    right: 1.5rem;
-  }
-  .show-scrollup {
-    bottom: 1.75rem;
   }
 }
