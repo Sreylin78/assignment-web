@@ -46,8 +46,9 @@
       height: 523px;
     }
   }
-  #services-2 .services-image {
-    order: 2;
+  #services-1 .services-image,
+  #services-3 .services-image {
+    order: -1;
   }
 }
 
