@@ -81,6 +81,7 @@
 
   input,
   textarea {
+    font-family: var(--body-font);
     padding: 10px;
     border: 2px solid var(--white-color);
     border-radius: 0.5rem;
