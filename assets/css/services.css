@@ -78,6 +78,11 @@
       height: 323px;
     }
   }
+  .services-content {
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 468px) {
