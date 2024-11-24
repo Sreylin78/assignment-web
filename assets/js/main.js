@@ -56,3 +56,10 @@ const year = document.getElementById("year");
 if (year) {
   year.innerHTML = new Date().getFullYear();
 }
+
+// AOS Init
+AOS.init({
+  duration: 1000,
+  once: true,
+  offset: 100,
+});
