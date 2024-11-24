@@ -22,11 +22,19 @@
 
     <!-- WebIcon -->
     <link rel="icon" href="../assets/image/logo.png" />
+
     <!-- Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
   </head>
   <body>
     <!-- Header -->
@@ -66,9 +74,9 @@
     <!-- main -->
     <main class="main">
       <!-- Contact -->
-      <section class="section contact" id="contact">
+      <section class="section contact" id="contact" data-aos="fade-up">
         <div class="contact-container container">
-          <div class="contact-content">
+          <div class="contact-content" data-aos="fade-right">
             <h1>ទំនាក់ទំនងមុីមុី ភោជនីយដ្ឋាន</h1>
 
             <p>
@@ -101,7 +109,7 @@
             </div>
           </div>
 
-          <form class="contact-form">
+          <form class="contact-form" data-aos="fade-left">
             <div class="inputs">
               <label for="name">ឈ្មោះអតិថិជន</label>
               <input
@@ -138,11 +146,11 @@
       </section>
 
       <!-- Question -->
-      <section class="section question" id="question">
+      <section class="section question" id="question" data-aos="fade-up">
         <h1 class="section-title">សំណួរ និង ចម្លើយ</h1>
 
         <div class="question-container container">
-          <div class="faqs">
+          <div class="faqs" data-aos="zoom-in">
             <h2>តើទីតាំងហាងមុីមុី ភោជនីយដ្ឋាន នៅឯណា ?</h2>
 
             <p>
@@ -151,7 +159,7 @@
             </p>
           </div>
 
-          <div class="faqs">
+          <div class="faqs" data-aos="zoom-in" data-aos-delay="200">
             <h2>តើយើងអាចកម្មង់ម្ហូបបានដោយរបៀបណា ?</h2>
 
             <p>
@@ -159,7 +167,7 @@
             </p>
           </div>
 
-          <div class="faqs">
+          <div class="faqs" data-aos="zoom-in" data-aos-delay="300">
             <h2>តើហាងលោកអ្នកមានសេវាកម្មអ្វីខ្លះ ?</h2>
 
             <p>
@@ -168,7 +176,7 @@
             </p>
           </div>
 
-          <div class="faqs">
+          <div class="faqs" data-aos="zoom-in" data-aos-delay="400">
             <h2>តើខ្ញុំអាចដឹងពីអ្នកបន្ថែមដោយរបៀបណា ?</h2>
 
             <p>
@@ -181,14 +189,14 @@
 
       <!-- Poster -->
       <section class="poster" id="poster">
-        <div class="poster-container">
+        <div class="poster-container" data-aos="fade-down">
           <img src="../assets/image/poster/poster-1.webp" alt="Poster Image" />
           <img src="../assets/image/poster/poster-2.webp" alt="Poster Image" />
           <img src="../assets/image/poster/poster-3.webp" alt="Poster Image" />
           <img src="../assets/image/poster/poster-4.webp" alt="Poster Image" />
         </div>
 
-        <div class="poster-content">
+        <div class="poster-content" data-aos="zoom-in">
           <h1>មុខម្ហូបពិសេសប្រចាំហាង</h1>
           <p>
             ហាងរបស់យើងខ្ញុំបើកទទួលភ្ញៀវជារៀងរាល់ថ្ងៃ <br />
@@ -196,7 +204,7 @@
           </p>
         </div>
 
-        <div class="poster-container">
+        <div class="poster-container" data-aos="fade-up">
           <img src="../assets/image/poster/poster-5.webp" alt="Poster Image" />
           <img src="../assets/image/poster/poster-6.webp" alt="Poster Image" />
           <img src="../assets/image/poster/poster-7.webp" alt="Poster Image" />
@@ -205,9 +213,9 @@
       </section>
 
       <!-- Map -->
-      <section class="section map" id="map">
+      <section class="section map" id="map" data-aos="fade-up">
         <div class="map-container container">
-          <div class="map-content">
+          <div class="map-content" data-aos="fade-right">
             <h2>ផែនទីទីតាំងហាងមុីមុី ភោជនីយដ្ឋាន</h2>
 
             <p>
@@ -225,7 +233,7 @@
             </a>
           </div>
 
-          <div class="map-image">
+          <div class="map-image" data-aos="fade-left">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.4516304780443!2d104.74101286967021!3d11.1475238812117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31097300182a5fc3%3A0xcb4d11c8eaaa6cca!2z4Z6B4Z-B4Z6P4Z-S4Z6P4Z6P4Z624Z6A4Z-C4Z6c!5e1!3m2!1sen!2skh!4v1731754804088!5m2!1sen!2skh"
               allowfullscreen=""
@@ -238,7 +246,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
       <h1 class="footer-title">សូមអរគុណសម្រាប់ការគាំទ្រ !!</h1>
 
       <div class="footer-main">
@@ -307,6 +315,9 @@
     <a href="#" id="scrollup" class="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!-- EmailJS -->
     <script
