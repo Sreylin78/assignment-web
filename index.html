@@ -23,184 +23,262 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <nav class="container">
+    <header class="header" id="header">
+      <nav class="nav container">
         <a href="#" class="nav-logo">
-          <img src="assets/image/logo.png" alt="logo" />
+          <img src="assets/image/logo.png" alt="Logo Image" />
+          <span>មុីមុី ភោជនីយដ្ឋាន</span>
         </a>
-        <div id="nav-menu">
-          <ul>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link active" href="#">ទំព័រដើម</a></li>
+            <li><a class="nav-link" href="./pages/menu.html">មីនុយ</a></li>
+            <li><a class="nav-link" href="./pages/about.html">អំពីយើង</a></li>
             <li>
-              <a class="active links" href="#">ទំព័រដើម</a>
+              <a class="nav-link" href="./pages/services.html">សេវាកម្ម</a>
             </li>
             <li>
-              <a class="links" href="./pages/menu.html">មីនុយ</a>
-            </li>
-            <li>
-              <a class="links" href="./pages/about.html">អំពីយើង</a>
-            </li>
-            <li>
-              <a class="links" href="./pages/services.html">សេវាកម្ម</a>
-            </li>
-            <li>
-              <a class="links" href="./pages/contact.html">ទំនាក់ទំនង</a>
+              <a class="nav-link" href="./pages/contact.html">ទំនាកទំនង</a>
             </li>
           </ul>
-          <!-- Close Menu - Nav Mobile -->
-          <div id="nav-close">
-            <i class="ri-close-large-fill"></i>
+
+          <!-- Nav Close -->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-fill"></i>
           </div>
         </div>
 
-        <div class="nav-actions">
-          <!-- Dark - Light Mode -->
-          <div id="nav-mode">
-            <i class="ri-moon-line"></i>
-          </div>
-          <!-- Open Menu - Nav Mobile -->
-          <div id="nav-toggle">
-            <i class="ri-menu-fill"></i>
-          </div>
+        <!-- Nav Open -->
+        <div class="nav-open" id="nav-open">
+          <i class="ri-menu-fill"></i>
         </div>
       </nav>
     </header>
 
-    <!-- Content -->
-    <main id="main">
+    <!-- main -->
+    <main class="main">
       <!-- Hero -->
-      <section class="section hero" id="hero">
+      <section class="section hero" id="hero" data-aos="fade-up">
         <div class="hero-container container">
-          <div class="content">
-            <div class="info">
-              <h1>ម៉ីម៉ី តាកែវ</h1>
-              <h2>ម្ហូបខ្មែរត្រកូលចិននៅតំបន់ស្រស់ស្អាតនៃខេត្តតាកែវ</h2>
-              <p>
-                ម៉ីម៉ីតាកែវមិនត្រឹមតែជាផ្ទះបាយធម្មតាប៉ុន្តែជាកន្លែងដែលផ្តល់ឱកាសឲ្យ
-                អ្នកទទួលអារម្មណ៍នៃការហូបអាហារខ្មែរបុរាណជាមួយនឹងរសជាតិបុរាណ
-                ពិតប្រាកដជាមួយនឹងសួនច្បារដ៏ស្រស់ស្អាតនិងស្ងប់ស្ងាត់ស្ថិតនៅ
-                កណ្តាលនៃដើមឈើរុក្ខជាតិបៃតងវាជាកន្លែងឱ្យភ្ញៀវភាគច្រើនរីករាយនឹងអារម្មណ៍សម្រាកលំហែជាមួយមនុស្សស្រឡាញ់។
-              </p>
-            </div>
-            <a href="./pages/about.html" class="button">លម្អិតអំពីហាងយើង</a>
+          <div class="hero-content" data-aos="fade-right">
+            <h1>មុីមុី តាកែវ</h1>
+            <p>
+              ម្ហូបខ្មែរត្រកូលចិននៅតំបន់ស្រស់ស្អាតនៃខេត្តតាកែវ
+              មុីមុីតាកែវមិនត្រឹមតែជាផ្ទះបាយធម្មតាប៉ុន្តែជាកន្លែងដែលផ្តល់
+              ឧកាសឲ្យអ្នកទទួលអារម្មណ៍នៃការហូបអាហារខ្មែរបុរាណជាមួយ
+              នឹងរសជាតិបុរាណពិតប្រាដកជាមួយនិងសួនច្បារដ៏ស្រស់ស្អាតនិង
+              ស្ងប់ស្ងាត់ស្ថិតនៅកណ្តាលនៃដើមឈើរុក្ខជាតិបៃតងវាជាកន្លែងឲ្យភ្ញៀវ
+              ភាគច្រើនរីករាយនឹងអារម្មណ៍សម្រាកលំហែជាមួយមនុស្សជាទីស្រឡាញ់ ។
+            </p>
+            <a href="./pages/about.html" class="btn">លំអិតអំពីហាងយើង</a>
           </div>
-          <div class="image">
-            <img src="assets/image/home/hero.jpg" alt="Hero Image" />
+
+          <div class="hero-image container-image" data-aos="fade-left">
+            <img src="assets/image/home/home-hero.webp" alt="Hero Image" />
           </div>
         </div>
       </section>
 
-      <!-- Menu -->
-      <section class="section menu" id="menu">
-        <h1 class="section-title">មុខម្ហូបដែលពេញនិយម</h1>
+      <!-- Popular Menu -->
+      <section class="section popular" id="popular" data-aos="fade-up">
+        <h1 class="section-title" data-aos="fade-down">មុខម្ហូបដែលពេញនិយម</h1>
 
-        <div class="menu-container container" id="menuContainer"></div>
-      </section>
+        <div class="popular-container container">
+          <div class="card" data-aos="zoom-in">
+            <img src="assets/image/home/home-popular-1.webp" alt="Menu Image" />
 
-      <!-- About -->
-      <section class="about section" id="about">
-        <div class="wrapper">
-          <div class="about-container container">
-            <div class="content">
-              <p>
-                សូមរីករាយជាមួយបទពិសោធន៍នៃការទទួលទានអាហារខ្មែរដ៏ឆ្ងាញ់បំផុតនៅក្នុងខេត្តតាកែវដែលអាថ៌កំបាំងនៃអតីតកាលឥឡូវនេះមានសម្រាប់អ្នកទាំងអស់គ្នាក្នុងការចែករំលែក។
-              </p>
-              <a href="./pages/about.html" class="button button-black"
-                >លម្អិតអំពីយើង</a
-              >
+            <div class="card-details">
+              <div>
+                <span>មាន់ដុតកូកា</span>
+                <span class="rate-start">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div>
+                <span>២០០០០ រៀល</span>
+                <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+              </div>
             </div>
-            <div class="images">
-              <img src="assets/image/home/about.webp" alt="About Image" />
+          </div>
+
+          <div class="card" data-aos="zoom-in">
+            <img src="assets/image/home/home-popular-2.webp" alt="Menu Image" />
+
+            <div class="card-details">
+              <div>
+                <span>មាន់ដុតកូកា</span>
+                <span class="rate-start">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div>
+                <span>២០០០០ រៀល</span>
+                <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-aos="zoom-in">
+            <img src="assets/image/home/home-popular-3.webp" alt="Menu Image" />
+
+            <div class="card-details">
+              <div>
+                <span>មាន់ដុតកូកា</span>
+                <span class="rate-start">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div>
+                <span>២០០០០ រៀល</span>
+                <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Opening -->
-      <section id="open" class="section open">
-        <div class="open-container container">
-          <div class="content">
-            <h2>
-              ហាងរបស់យើងបើក
-              <br />
-              ទទួលភ្ញៀវរៀងរាល់ថ្ងៃ
-            </h2>
+      <!-- Services -->
+      <section class="section services" id="services" data-aos="fade-up">
+        <div class="services-container container">
+          <div class="container-image services-image" data-aos="fade-right">
+            <img
+              src="assets/image/home/home-services.webp"
+              alt="Services Image"
+            />
           </div>
-          <div class="info">
-            <h2>
-              ថ្ងៃច័ន្ទ ដល់ ថ្ងៃសុក្រ: <span>10:00 ព្រឹក - 10:00 យប់</span>
-            </h2>
-            <h2>
-              ថ្ងៃសៅរ៍ និង ថ្ងៃអាទិត្យ: <span>11:00 ព្រឹក - 11:00 យប់</span>
-            </h2>
+
+          <div class="services-content" data-aos="fade-left">
+            <p>
+              សូមរីករាយជាមួយបទពិសោធន៍នៃការទទួលទានអាហារខ្មែរដ៏ឆ្ងាញ់បំផុត
+              នៅក្នុងខេត្តតាកែវដែលជាអាថ៌កំបាំងនៃអតីតកាល ឥឡូវនេះមានសម្រាប់
+              អ្នកទាំងអស់គ្នាក្នុងការចែករំលែកហើយ ។
+            </p>
+            <a href="./pages/services.html" class="btn">ទទួលយកសេវាកម្មបន្ថែម</a>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
-      <section class="contact section" id="contact">
-        <div class="wrapper">
-          <div class="contact-container container">
-            <div class="content">
-              <p>
-                ព៌ត័មានបន្ថែមសូមចូលទៅទំនាក់ទំនងជាមួយយើងខ្ញុំនៅទំព័រទំនាក់ទំនង
-                ដើម្បីស្វែងយល់បន្ថែម និងដាក់សំណួររបស់អ្នក។
-              </p>
-              <a href="./pages/about.html" class="button button-black"
-                >ទាក់ទងយើង</a
-              >
-            </div>
-            <div class="images">
-              <img src="assets/image/home/contact.jpg" alt="About Image" />
-            </div>
-          </div>
+      <!-- Poster -->
+      <section class="poster" id="poster">
+        <div class="poster-container" data-aos="fade-down">
+          <img src="assets/image/poster/poster-1.webp" alt="Poster Image" />
+          <img src="assets/image/poster/poster-2.webp" alt="Poster Image" />
+          <img src="assets/image/poster/poster-3.webp" alt="Poster Image" />
+          <img src="assets/image/poster/poster-4.webp" alt="Poster Image" />
+        </div>
+
+        <div class="poster-content" data-aos="zoom-in">
+          <h1>មុខម្ហូបពិសេសប្រចាំហាង</h1>
+          <p>
+            ហាងរបស់យើងខ្ញុំបើកទទួលភ្ញៀវជារៀងរាល់ថ្ងៃ <br />
+            ចាប់ពីថ្ងៃច័ន្ទ ដល់ ថ្ងៃអាទិត្យ វេលាម៉ោង ៧:០០ ព្រឹក ដល់ ៧:០០ យប់
+          </p>
+        </div>
+
+        <div class="poster-container" data-aos="fade-up">
+          <img src="assets/image/poster/poster-5.webp" alt="Poster Image" />
+          <img src="assets/image/poster/poster-6.webp" alt="Poster Image" />
+          <img src="assets/image/poster/poster-7.webp" alt="Poster Image" />
+          <img src="assets/image/poster/poster-8.webp" alt="Poster Image" />
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="f-content">
-          <a href="#" class="footer-logo">
-            <img src="assets/image/logo.png" alt="logo" />
-          </a>
+    <footer class="footer" data-aos="fade-up">
+      <h1 class="footer-title">សូមអរគុណសម្រាប់ការគាំទ្រ !!</h1>
+
+      <div class="footer-main">
+        <div class="footer-container container">
+          <ul class="footer-list footer-socials">
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-tiktok-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-app">
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-apple-fill"></i>
+                <span>iPhone</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-android-fill"></i>
+                <span> Android </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-link">
+            <li>
+              <a href="#">Term & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <p class="footer-copy">
+            &copy; Copyright <span id="year"></span> GO24 Cambodia Co., Ltd. All
+            rights reserved.
+          </p>
         </div>
-
-        <ul class="f-list">
-          <li><a href="#" class="links active">ទំព័រដើម</a></li>
-          <li><a href="./pages/menu.html" class="links">មីនុយ</a></li>
-          <li><a href="./pages/about.html" class="links">អំពីយើង</a></li>
-          <li><a href="./pages/services.html" class="links">សេវាកម្ម</a></li>
-          <li><a href="./pages/contact.html" class="links">ទំនាក់ទំនង</a></li>
-        </ul>
-
-        <ul class="f-socials">
-          <li>
-            <a href="#"> <i class="ri-facebook-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copy-right container">
-        <p>
-          &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team MeyMey</a>
-        </p>
       </div>
     </footer>
 
     <!-- Scrollup -->
-    <a href="#" id="scrollup">
+    <a href="#" id="scrollup" class="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>

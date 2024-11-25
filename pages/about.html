@@ -21,297 +21,200 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <nav class="container">
+    <header class="header" id="header">
+      <nav class="nav container">
         <a href="#" class="nav-logo">
-          <img src="../assets/image/logo.png" alt="logo" />
+          <img src="../assets/image/logo.png" alt="Logo Image" />
+          <span>មុីមុី ភោជនីយដ្ឋាន</span>
         </a>
-        <div id="nav-menu">
-          <ul>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+            <li><a class="nav-link" href="./menu.html">មីនុយ</a></li>
+            <li><a class="nav-link active" href="#">អំពីយើង</a></li>
             <li>
-              <a class="links" href="../index.html">ទំព័រដើម</a>
+              <a class="nav-link" href="./services.html">សេវាកម្ម</a>
             </li>
             <li>
-              <a class="links" href="./menu.html">មីនុយ</a>
-            </li>
-            <li>
-              <a class="active links" href="#">អំពីយើង</a>
-            </li>
-            <li>
-              <a class="links" href="./services.html">សេវាកម្ម</a>
-            </li>
-            <li>
-              <a class="links" href="./contact.html">ទំនាក់ទំនង</a>
+              <a class="nav-link" href="./contact.html">ទំនាកទំនង</a>
             </li>
           </ul>
-          <!-- Close Menu - Nav Mobile -->
-          <div id="nav-close">
-            <i class="ri-close-large-fill"></i>
+
+          <!-- Nav Close -->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-fill"></i>
           </div>
         </div>
-        <!-- Open Menu - Nav Mobile -->
-        <div id="nav-toggle">
+
+        <!-- Nav Open -->
+        <div class="nav-open" id="nav-open">
           <i class="ri-menu-fill"></i>
         </div>
       </nav>
     </header>
 
-    <!-- Content -->
-    <main id="main">
-      <section class="section" id="about">
-        <h1 class="section-title">លម្អិតអំពីយើង</h1>
-
-        <div class="about-1 about">
-          <div class="container">
-            <div class="content">
-              <div class="info">
-                <h1>ម្ហូបប្រពៃណីខ្មែរ</h1>
-
-                <p>
-                  ម្ហូបប្រពៃណីខ្មែរ បានអភិវឌ្ឍន៍ពីអ្នកគ្រប់គ្រងដ៏មានឈ្មោះ លោកឡូ
-                  ឡើង និងក្រុមការងាររបស់គាត់
-                  ដែលបានចាប់ផ្តើមធ្វើដំណើរក្នុងភូមិសាស្រ្តឆ្ងាយជាច្រើន
-                  ដើម្បីស្វែងរកគ្រឿងផ្សំនិងមុខម្ហូបតាមរយៈកំរិត។
-                  ការទទួលយកបច្ចេកទេសចម្អិនប្រពៃណី ប៉ុន្តែមានការបង្កើតនូវក្លិន
-                  និងអារម្មណ៍ថ្មីៗ គម្រោង មេយមេយ នាំមកនូវចំណីអាហារខ្មែរ ដ៏ឈានមុខ
-                  ដែលមានសមាសធាតុស្រស់ ហើយអ្នកមិនដែលបានសាកល្បងពីមុនទេ។
-                  រីករាយជាមួយបទពិសោធន៍ទាំងអស់នៃម្ហូបខ្មែរនៅក្នុងខេត្តតាគូ
-                  ដែលសម័យនៃអតីតកាលឥឡូវនេះអាចរកបានសម្រាប់គ្រប់គ្នាដើម្បីចែករំលែក។
-                </p>
-              </div>
-
-              <a href="./contact.html" class="button button-black"
-                >ទាក់ទងយើងអីឡូវនេះ</a
-              >
-            </div>
-
-            <div class="image">
-              <img src="../assets/image/about/about-1.webp" alt="About Image" />
-            </div>
+    <!-- main -->
+    <main class="main">
+      <section class="section about" id="about-1" data-aos="fade-up">
+        <div class="about-container container">
+          <div class="about-content" data-aos="fade-right">
+            <h1>ម្ហូបប្រពៃណីខ្មែរ</h1>
+            <p>
+              ម្ហូបប្រពៃណីខ្មែរ បានអភិវឌ្ឍន៍ពីអ្នកគ្រប់គ្រងដ៏ល្បីឈ្មោះគឺ លោកឡូ
+              ឡើង និងក្រុមការងាររបស់គាត់
+              ដែលបានចាប់ផ្តើមធ្វើដំណើរក្នុងភូមិសាស្រ្តឆ្ងាយ
+              ជាច្រើនដើម្បីស្វែងរកគ្រឿងផ្សំនិងមុខម្ហូបតាមរយះកម្រិត ។ ការទទួលយក
+              បច្ចេកទេសចម្អិនប្រពៃណី
+              ប៉ុន្តែមានការបង្កើតនូវក្លិននិងអារម្មណ៍ថ្មីដែលនាំ
+              មកនូវចំណីអាហារខ្មែរដ៏ឈានមុខគេដែលមានសមាសធាតុស្រស់ហើយអ្វីដែលពិសេសអ្នកមិនដែលបានសាកល្បពីមុនមកទេ
+              ។
+            </p>
+            <a href="./menu.html" class="btn">មើលមីនុយមុខម្ហូប</a>
           </div>
-        </div>
 
-        <div class="about-2 about">
-          <div class="container">
-            <div class="content">
-              <div class="info">
-                <h1>សមាសធាតុស្រស់</h1>
-
-                <p>
-                  អ្វីដែលធ្វើឲ្យម្ហូបខ្មែរមានរសជាតិឆ្ងាញ់គឺការបញ្ចូលគ្នានៃសមាសធាតុស្រស់
-                  ហើយមេយមេយ
-                  មានកិត្តិយសក្នុងការប្រើប្រាស់ផលិតផលពីកសិកម្មសុខាភិបាលក្នុងស្រុកយ៉ាងអតិផរ។
-                  បង្កកាង គឺជាអំពិលទឹកស្រស់
-                  និងត្រីច្រើនត្រូវបានយកចេញពីមហាការីមេគង្គ។
-                  ខ្ញុំនាំឈើប្រហោងខាងក្រោមទៀតពីកែបនិងកំពត។ បន្លែ
-                  និងគ្រាប់រុក្ខជាតិត្រូវបានច្រានចោលនៅជុំវិញទន្លេតុល្សេប។
-                  គោឬសត្រូវបានលូតលាស់នៅខេត្តតាគូ និងសត្វទាការទៅកាន់ខេត្តសៀមរាប។
-                  សម្ភារៈប្រកបដោយអំពិល
-                  និងឈើផ្លែមានការលូតលាស់យ៉ាងច្រើននៅទូទាំងប្រទេស
-                  បូកនឹងស្នូលខ្មែរដែលមានសារៈសំខាន់ និងឈ្នះរង្វាន់នោះ
-                  គឺខាប់ស្រូវ។
-                </p>
-              </div>
-
-              <a href="./contact.html" class="button button-black"
-                >ទាក់ទងយើងអីឡូវនេះ</a
-              >
-            </div>
-
-            <div class="image">
-              <img src="../assets/image/about/about-2.webp" alt="About Image" />
-            </div>
-          </div>
-        </div>
-
-        <div class="about-3 about">
-          <div class="container">
-            <div class="content">
-              <div class="info">
-                <h1>ម្ហូបខ្មែរ</h1>
-
-                <p>
-                  ខណៈពេលដែលព្រះរាជាណាចក្រអាចទទួលឥទ្ធិពលពីអ្នកដទៃដូចជា ប្រទេសថៃ
-                  និងវៀតណាម, ដូចជាប្រទេសឥណ្ឌា និងចិនមួយរយៈពេលមួយពាន់ឆ្នាំមុន,
-                  មុខម្ហូបខ្មែរ​មានរសជាតិសំខាន់ផ្ទាល់ខ្លួន។ ម្ហូបប្រពៃណីនេះ
-                  បានផ្ទេរក្នុងគ្រួសារពីម្តាយទៅកូនស្រី
-                  ហើយមានប្រជាប្រិយភាពដោយសារពិនិត្យតិចតួចរវាងគ្រាប់ឈើនិងអំបិល។
-                  មុខម្ហូបខ្មែរដែលមានការកែលំអរទៅនឹងសមតុល្យអស្ចារ្យនៃរសជាតិស្លឹកឈើ,
-                  ប្លេះ, ឈុត និងឈុតដ៏ធំដោយមិនអាចជាប់ជាប់អន្ទាក់នោះទេ។
-                  ដោយសារបឹងធំៗដែលត្រង់លើភូមិ, ជាពិសេសមហាការីមេគង្គ,
-                  ត្រីគឺជាសមាសធាតុសំខាន់មួយ និងស្រូវ។
-                  សត្វត្រីគឺជាសាច់សំខាន់នៃម្ហូបខ្មែរ,
-                  ច្បាប់ល្បែងនៃអាហារខ្មែរគឺជាព្រោះពោះ, ប្រេងត្រីដែលបានកែប្រែ,
-                  ដែលមានក្លិនខ្លាំងនិងរសជាតិពិសេសផ្ទាល់ខ្លួន។
-                </p>
-              </div>
-
-              <a href="./contact.html" class="button button-black"
-                >ទាក់ទងយើងអីឡូវនេះ</a
-              >
-            </div>
-
-            <div class="image">
-              <img src="../assets/image/about/about-3.webp" alt="About Image" />
-            </div>
-          </div>
-        </div>
-
-        <div class="about-4 about">
-          <div class="container">
-            <div class="content">
-              <div class="info">
-                <h1>ស្រាដ៏ល្អឥតខ្ចោះ</h1>
-
-                <p>
-                  បញ្ជីស្រាដ៏ទូលំទូលាយនៅមេយមេយ តាគូ ត្រូវបានអាប់ដេតជាបន្តបន្ទាប់
-                  ដើម្បីធានាថាស្តុកនៅក្នុងព្យួរក្នុងកម្រិតល្អបំផុតពីទូទាំងពិភពលោក។
-                  យើងទាញយកស្រារបស់យើងពីឧទ្យានចាប់ផ្តើមនៅប្រទេសបារាំង និងអ៊ីតាលី
-                  ដល់រោងចក្រថ្មីនិងច្នៃប្រឌិតនៅអូស្ត្រាលី និងចីឡេ
-                  ដែលសមស្របយ៉ាងល្អជាមួយម្ហូបខ្មែរ។
-                </p>
-              </div>
-
-              <a href="./contact.html" class="button button-black"
-                >ទាក់ទងយើងអីឡូវនេះ</a
-              >
-            </div>
-
-            <div class="image">
-              <img src="../assets/image/about/about-4.jpg" alt="About Image" />
-            </div>
+          <div class="about-image container-image" data-aos="fade-left">
+            <img src="../assets/image/about/about-1.webp" alt="Hero Image" />
           </div>
         </div>
       </section>
 
-      <section class="section" id="chef">
-        <h1 class="section-title">ចុងភៅរបស់យើង</h1>
-
-        <div class="container chef-container">
-          <div class="card">
-            <div class="image">
-              <img src="../assets/image/about/cheff.jpg" alt="Chef Image" />
-            </div>
-            <div class="info">
-              <h3>ចុងភៅ វិសាល</h3>
-              <span>(Chef Visal)</span>
-            </div>
-            <div class="socials">
-              <a href="#">
-                <i class="ri-facebook-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-instagram-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-tiktok-fill"></i>
-              </a>
-            </div>
+      <!-- About 2 -->
+      <section class="section about" id="about-2" data-aos="fade-up">
+        <div class="about-container container">
+          <div class="about-image container-image" data-aos="fade-right">
+            <img src="../assets/image/about/about-2.webp" alt="Hero Image" />
           </div>
 
-          <div class="card">
-            <div class="image">
-              <img src="../assets/image/about/cheff.jpg" alt="Chef Image" />
-            </div>
-            <div class="info">
-              <h3>ចុងភៅ វិសាល</h3>
-              <span>(Chef Visal)</span>
-            </div>
-            <div class="socials">
-              <a href="#">
-                <i class="ri-facebook-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-instagram-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-tiktok-fill"></i>
-              </a>
-            </div>
+          <div class="about-content" data-aos="fade-left">
+            <h1>សមាសធាតុគ្រឿងផ្សំ</h1>
+            <p>
+              អ្វីដែលធ្វើឲ្យម្ហូបខ្មែរមានរសជាតិឆ្ងាញ់ពិសេសលើសគេគឺការបញ្ចូលគ្នានៃសមាសធាតុស្រស់
+              ហើយមានកិត្តិយសក្នុងការប្រើប្រាស់ផលិតផលពីកសិ
+              កម្មសុខាភិបាលក្នុងស្រុកយ៉ាងអតិផរ ។ បង្កកាង គឺជាអីបិលទឹកស្រស់នៃ
+              ត្រីនិងច្រើនត្រូវបានយកចេញពីមហាការីមេគង្គ ។ ខ្ញុំនាំឈើប្រហោងខាង
+              ក្រោមទៀតពីកែប និងកំពត ។ បន្លែ និងគ្រាប់រុក្ខជាតិត្រូវបានច្រានចោល
+              នៅជុំវិញទម្លេតុល្សេប ។
+            </p>
+            <a href="./menu.html" class="btn">មើលមីនុយមុខម្ហូប</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About 3 -->
+      <section class="section about" id="about-3" data-aos="fade-up">
+        <div class="about-container container">
+          <div class="about-content" data-aos="fade-right">
+            <h1>ម្ហូបពិសេសរបស់ខ្មែរ</h1>
+            <p>
+              ខណះពេលដែលព្រះរាជាណាចក្រអាចទទួលឥទិ្ធពលពីអ្នកដទៃមានដូចជា ប្រទេសថៃ
+              វៀតណាម ឥណ្ឌា និងចិនមួយរយះពេលមួយពាន់ឆ្នាំមុនហើយ
+              នោះមុខម្ហូបខ្មែរមានរសជាតិសំខាន់ផ្ទាល់ខ្លួន ។
+              ម្ហូបប្រពៃណីខ្មែរទាំងនេះគឺ បានផ្ទេរក្នុងគ្រួសារពីម្តាយទៅកូនស្រី
+              ហើយមានប្រជាប្រិយភាពដោយាសារ ពិនិត្យតិចតួចរវាងគ្រាប់ឈើ
+              និងអំបិលមុខម្ហូបខ្មែរដែលមានការកែលំអរទៅ
+              និងសមតុល្យអស្ចារ្យនៃរសជាតិស្លឹកឈើប្លេះឈុតនិងឈុតដ៏ធំ ។
+            </p>
+            <a href="./menu.html" class="btn">មើលមីនុយមុខម្ហូប</a>
           </div>
 
-          <div class="card">
-            <div class="image">
-              <img src="../assets/image/about/cheff.jpg" alt="Chef Image" />
-            </div>
-            <div class="info">
-              <h3>ចុងភៅ វិសាល</h3>
-              <span>(Chef Visal)</span>
-            </div>
-            <div class="socials">
-              <a href="#">
-                <i class="ri-facebook-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-instagram-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-tiktok-fill"></i>
-              </a>
-            </div>
+          <div class="about-image container-image" data-aos="fade-left">
+            <img src="../assets/image/about/about-3.webp" alt="Hero Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About 4 -->
+      <section class="section about" id="about-4" data-aos="fade-up">
+        <div class="about-container container">
+          <div class="about-image container-image" data-aos="fade-right">
+            <img src="../assets/image/about/about-4.webp" alt="Hero Image" />
           </div>
 
-          <div class="card">
-            <div class="image">
-              <img src="../assets/image/about/cheff.jpg" alt="Chef Image" />
-            </div>
-            <div class="info">
-              <h3>ចុងភៅ វិសាល</h3>
-              <span>(Chef Visal)</span>
-            </div>
-            <div class="socials">
-              <a href="#">
-                <i class="ri-facebook-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-instagram-fill"></i>
-              </a>
-              <a href="#">
-                <i class="ri-tiktok-fill"></i>
-              </a>
-            </div>
+          <div class="about-content" data-aos="fade-left">
+            <h1>ទំនាក់ទំនងបន្ថែម</h1>
+            <p>
+              ព័ត៌មានបន្ថែមសូមចូលទៅកាន់ទំព័រទំនាក់ទំនងខាងលើនេះដើម្បីទាក់ទងយើងខ្ញុំក្នុងការស្វែងយល់បន្ថែម
+              និងដាក់សំណួររបស់អ្នក ។
+            </p>
+            <a href="./contact.html" class="btn">ទំនាក់ទំនង</a>
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="f-content">
-          <a href="#" class="footer-logo">
-            <img src="../assets/image/logo.png" alt="logo" />
-          </a>
+    <footer class="footer" data-aos="fade-up">
+      <h1 class="footer-title">សូមអរគុណសម្រាប់ការគាំទ្រ !!</h1>
+
+      <div class="footer-main">
+        <div class="footer-container container">
+          <ul class="footer-list footer-socials">
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-tiktok-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-app">
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-apple-fill"></i>
+                <span>iPhone</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-android-fill"></i>
+                <span> Android </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-link">
+            <li>
+              <a href="#">Term & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <p class="footer-copy">
+            &copy; Copyright <span id="year"></span> GO24 Cambodia Co., Ltd. All
+            rights reserved.
+          </p>
         </div>
-
-        <ul class="f-list">
-          <li><a href="../index.html" class="links">ទំព័រដើម</a></li>
-          <li><a href="./menu.html" class="links">មីនុយ</a></li>
-          <li><a href="#" class="links active">អំពីយើង</a></li>
-          <li><a href="./services.html" class="links">សេវាកម្ម</a></li>
-          <li><a href="./contact.html" class="links">ទំនាក់ទំនង</a></li>
-        </ul>
-
-        <ul class="f-socials">
-          <li>
-            <a href="#"> <i class="ri-facebook-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copy-right container">
-        <p>
-          &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team MeyMey</a>
-        </p>
       </div>
     </footer>
 
@@ -319,6 +222,9 @@
     <a href="#" id="scrollup" class="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!-- JS -->
     <script src="../assets/js/main.js"></script>

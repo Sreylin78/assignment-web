@@ -21,283 +21,225 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <nav class="container">
+    <header class="header" id="header">
+      <nav class="nav container">
         <a href="#" class="nav-logo">
-          <img src="../assets/image/logo.png" alt="logo" />
+          <img src="../assets/image/logo.png" alt="Logo Image" />
+          <span>មុីមុី ភោជនីយដ្ឋាន</span>
         </a>
-        <div id="nav-menu">
-          <ul>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+            <li><a class="nav-link" href="./menu.html">មីនុយ</a></li>
+            <li><a class="nav-link" href="./about.html">អំពីយើង</a></li>
             <li>
-              <a class="links" href="../index.html">ទំព័រដើម</a>
+              <a class="nav-link active" href="#">សេវាកម្ម</a>
             </li>
             <li>
-              <a class="links" href="./menu.html">មីនុយ</a>
-            </li>
-            <li>
-              <a class="links" href="./about.html">អំពីយើង</a>
-            </li>
-            <li>
-              <a class="active links" href="#">សេវាកម្ម</a>
-            </li>
-            <li>
-              <a class="links" href="./contact.html">ទំនាក់ទំនង</a>
+              <a class="nav-link" href="./contact.html">ទំនាកទំនង</a>
             </li>
           </ul>
-          <!-- Close Menu - Nav Mobile -->
-          <div id="nav-close">
-            <i class="ri-close-large-fill"></i>
+
+          <!-- Nav Close -->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-fill"></i>
           </div>
         </div>
-        <!-- Open Menu - Nav Mobile -->
-        <div id="nav-toggle">
+
+        <!-- Nav Open -->
+        <div class="nav-open" id="nav-open">
           <i class="ri-menu-fill"></i>
         </div>
       </nav>
     </header>
 
-    <!-- Content -->
-    <main id="main">
-      <section id="services" class="section">
-        <h1 class="section-title">សេវាកម្មរបស់យើង</h1>
-
-        <div class="services-1 services">
-          <div class="container">
-            <div class="content">
-              <div class="info">
-                <h1>បន្ទប់អាហារឯកជន</h1>
-
-                <p>
-                  សម្រាប់អ្នកដែលស្វែងរកកន្លែងបន្ថែមភាពផ្ទាល់ខ្លួន
-                  ដើម្បីអបអរសាទរខួបកំណើត ខួបអាពាហ៍ពិពាហ៍
-                  ឬរៀបចំអាហារថ្ងៃត្រង់ជំនួញ ឬពិធីកាហ្វេទទួលភ្ញៀវ
-                  បន្ទប់អាហារឯកជនរបស់យើងគឺជាជម្រើសដ៏ល្អបំផុត។
-                  ក្រុមការងារដែលមានបទពិសោធន៍របស់យើង នឹងប្ដូរតាមបំណងមុខម្ហូប
-                  ដើម្បីឆ្លើយតបនឹងរសជាតិរបស់អ្នក
-                  បង្កើតពេលកាហ្វេឆ្លងវេនសម្រាប់ព្រឹត្តិការណ៍
-                  និងជួយជាមួយរាល់លម្អិតផ្សេងទៀតដូចជាការតុបតែង ការចាក់ភ្លើង ផ្កា
-                  និងការរៀបចំតុ។
-                  យើងក៏ផ្តល់ជូននូវកន្លែងផ្តាច់មុខរបស់ភោជនីយដ្ឋានសម្រាប់ពិធីអាពាហ៍ពិពាហ៍
-                  និងព្រឹត្តិការណ៍សហគ្រិនចំនួន 120 នាក់ផងដែរ។
-                </p>
-              </div>
-              <button class="button">ទាក់ទងយើងអីឡូវនេះ</button>
-            </div>
-
-            <div class="image">
-              <img
-                src="../assets/image/services/services-1.jpg"
-                alt="Services Image"
-              />
-            </div>
+    <!-- main -->
+    <main class="main">
+      <!-- Services 1 -->
+      <section class="section services" id="services-1" data-aos="fade-up">
+        <div class="services-container container">
+          <div class="services-content" data-aos="fade-right">
+            <h1>បន្ទប់អាហារឯកជន</h1>
+            <p>
+              សម្រាប់អ្នកដែលស្វែងរកកន្លែងបន្ថែមភាពផ្ទាល់ខ្លួន ដើម្បីអបអរសាទរខួប
+              កំណើតខួបអាពាហ៍ពិពា៍ ឬរៀបចំអាហារថ្ងៃត្រង់ជំនួញ ឬពិធីកាហ្វេទទួល
+              ភ្ញៀងបន្ទប់អាហារឯកជនរបស់យើងគឺជាជម្រើសដ៏ល្អបំផុត ។ ក្រុមការងារ
+              ដែលមានបទពិសោធន៍របស់យើង និងប្តូរតាមបំណងមុខម្ហូបដើម្បីឆ្លើយ
+              តបនិងរសជាតិរបស់អ្នកបង្កើតពេលកាហ្វេឆ្លងវេនសម្រាប់ព្រឹត្តិការណ៍និងជួយជាមួយរាល់លម្អិតផ្សេងទៀតដូចជាការតុបតែង
+              ការចាក់ភ្លើង ផ្កា ។
+            </p>
+            <a href="./contact.html" class="btn">ទំនាក់ទំនង</a>
           </div>
-        </div>
 
-        <div class="services-2 services">
-          <div class="container">
-            <div class="image">
-              <img
-                src="../assets/image/services/services-2.jpeg"
-                alt="Services Image"
-              />
-            </div>
-
-            <div class="content">
-              <div class="info">
-                <h1>បន្ទប់អាហារគ្រួសារ</h1>
-
-                <p>
-                  សម្រាប់អតិថិជនដែលចង់មានពេលវេលាដ៏ផ្ទាល់ខ្លួនជាមួយគ្រួសារ
-                  បន្ទប់អាហារគ្រួសាររបស់យើងគឺជាកន្លែងដ៏សមស្របបំផុតសម្រាប់អបអរសាទរព្រឹត្តិការណ៍គ្រួសារ
-                  រឺអាហារជាមួយគ្នា។
-                  ក្រុមការងាររបស់យើងអាចត្រៀមជូននូវមុខម្ហូបដែលសមស្របនឹងចំណង់ចំណូលចិត្ត
-                  និងជួយរៀបចំការតុបតែងតាមតម្រូវការ
-                  ដើម្បីធ្វើឱ្យការលេងសប្បាយរបស់គ្រួសារអ្នកកាន់តែពិសេស។
-                </p>
-              </div>
-              <button class="button">ទាក់ទងយើងអីឡូវនេះ</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="services-3 services">
-          <div class="container">
-            <div class="content">
-              <div class="info">
-                <h1>កក់តាមគេហទំព័រ</h1>
-
-                <p>
-                  ដើម្បីធ្វើការកក់តុនៅមេយមេយ
-                  រៀបចំការចុះឈ្មោះជាមុនតាមរយៈគេហទំព័ររបស់យើង
-                  ដោយស្រួលនិងងាយស្រួល។ អ្នកអាចជ្រើសរើសកាលបរិច្ឆេទ
-                  និងម៉ោងដែលអ្នកចង់បាន
-                  ដើម្បីធានាថាម៉ោងអាហាររបស់អ្នកកើតឡើងដោយសុខដុម និងមានភាពកក់ក្តៅ។
-                  សូមចូលទៅកាន់គេហទំព័ររបស់យើងឥឡូវនេះ
-                  ដើម្បីបញ្ជាក់ការកក់របស់អ្នក។
-                </p>
-              </div>
-              <button class="button">ទាក់ទងយើងអីឡូវនេះ</button>
-            </div>
-
-            <div class="image">
-              <img
-                src="../assets/image/services/services-3.jpg"
-                alt="Services Image"
-              />
-            </div>
+          <div class="services-image container-image" data-aos="fade-left">
+            <img
+              src="../assets/image/services/services-1.webp"
+              alt="Hero Image"
+            />
           </div>
         </div>
       </section>
 
-      <section id="client" class="section">
-        <h1 class="section-title">មតិអតិថិជន</h1>
-
-        <div class="container">
-          <div class="card">
-            <div class="head">
-              <div class="stars">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-fill"></i>
-              </div>
-              <p>
-                "ម្ហូបឆ្ងាញ់ខ្លាំងណាស់! បុគ្គលិកមានការយកចិត្តទុកដាក់
-                និងសេវាកម្មប្រកបដោយភាពទាក់ទាញ។
-                មេយមេយគឺជាកន្លែងដ៏ល្អសម្រាប់អាហារជាមួយគ្រួសារ!"
-              </p>
-            </div>
-
-            <div class="bottom">
-              <img
-                src="../assets/image/services/client-1.jpg"
-                alt="Client Image"
-              />
-
-              <span> លោក វណ្ណាបុត្រ <b> (Mr. Vannaboth) </b> </span>
-            </div>
+      <!-- Services 2 -->
+      <section class="section services" id="services-2" data-aos="fade-up">
+        <div class="services-container container">
+          <div class="services-image container-image" data-aos="fade-right">
+            <img
+              src="../assets/image/services/services-2.webp"
+              alt="Hero Image"
+            />
           </div>
 
-          <div class="card">
-            <div class="head">
-              <div class="stars">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-fill"></i>
-              </div>
-              <p>
-                "ការរស់នៅបរិយាកាសនៅមេយមេយគឺដ៏កក់ក្តៅ អាហារទាំងអស់ស្រស់
-                និងមានគុណភាពខ្ពស់។
-                នេះគឺជាកន្លែងដែលខ្ញុំពិតជាចង់ត្រលប់មកលេងម្តងទៀតណាស់!"
-              </p>
-            </div>
-
-            <div class="bottom">
-              <img
-                src="../assets/image/services/client-4.jpg"
-                alt="Client Image"
-              />
-              <span> អ្នកនាង សាវរី <b> (Ms. Savry) </b> </span>
-            </div>
+          <div class="services-content" data-aos="fade-left">
+            <h1>បន្ទប់អាហារគ្រួសារ</h1>
+            <p>
+              សម្រាប់អតិថិជនដែលចង់មានពេលវេលាដ៏អស្ចារ្យផ្ទាល់ខ្លួនជាមួយគ្រួសារបន្ទប់អាហារគ្រួសាររបស់យើងគឺជាកន្លែងដ៏សមស្របបំផុតសម្រាប់អបអរសាទរព្រឹត្តិការណ៍គ្រួសារ
+              ឬអាហារជាមួយគ្នា ។ ក្រុុមការងាររបស់យើងអាច
+              ត្រៀមជូននូវមុខម្ហូបដែលសមស្របនិងចំណង់ចំណូលចិត្ត និងជួយរៀបចំ
+              ការតុបតែងតាមតម្រូវការ ដើម្បីធ្វើឲ្យការលេងសប្បាយរបស់គ្រួសារអ្នកកាន់
+              តែពិសេស ។
+            </p>
+            <a href="./contact.html" class="btn">ទំនាក់ទំនង</a>
           </div>
-          
-          <div class="card">
-            <div class="head">
-              <div class="stars">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-fill"></i>
-              </div>
-              <p>
-                "ម្ហូបឆ្ងាញ់ខ្លាំងណាស់! បុគ្គលិកមានការយកចិត្តទុកដាក់
-                និងសេវាកម្មប្រកបដោយភាពទាក់ទាញ។
-                មេយមេយគឺជាកន្លែងដ៏ល្អសម្រាប់អាហារជាមួយគ្រួសារ!"
-              </p>
-            </div>
+        </div>
+      </section>
 
-            <div class="bottom">
-              <img
-                src="../assets/image/services/client-1.jpg"
-                alt="Client Image"
-              />
-
-              <span> លោក វណ្ណាបុត្រ <b> (Mr. Vannaboth) </b> </span>
-            </div>
+      <!-- Services 3 -->
+      <section class="section services" id="services-3" data-aos="fade-up">
+        <div class="services-container container">
+          <div class="services-content" data-aos="fade-right">
+            <h1>កក់តាមគេហទំព័រ</h1>
+            <p>
+              ដើម្បីធ្វើការកក់តុនៅមុីមុីរៀបចំការចុះឈ្មោះជាមុនតាមរយះគេហទំព័ររបស់យើងដោយស្រួល
+              និងងាយស្រួល ។ អ្នកអាចជ្រើសរើសកាលបរិច្ឆេទរួម ថែមម៉ោងដែលអ្នកចង់បាន
+              ដើម្បីធានាថាម៉ោងអាហាររបស់អ្នកកើតឡើង ដោយសុខដុម មានភាពកក់ក្តៅ
+              និងមិនបង្កការរំខានដល់លោកអ្នក ឬធ្វើ ឲ្យលោកអ្នករងចាំនោះ ។
+              សូមអ្នកចូលទៅកាន់គេហទំព័ររបស់យើងឥឡូវ នេះ
+              ដើម្បីបញ្ជាក់ការកក់របស់អ្នក ។
+            </p>
+            <a href="./contact.html" class="btn">ទំនាក់ទំនង</a>
           </div>
 
-          <div class="card">
-            <div class="head">
-              <div class="stars">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-fill"></i>
-              </div>
-              <p>
-                "ការរស់នៅបរិយាកាសនៅមេយមេយគឺដ៏កក់ក្តៅ អាហារទាំងអស់ស្រស់
-                និងមានគុណភាពខ្ពស់។
-                នេះគឺជាកន្លែងដែលខ្ញុំពិតជាចង់ត្រលប់មកលេងម្តងទៀតណាស់!"
-              </p>
-            </div>
-
-            <div class="bottom">
-              <img
-                src="../assets/image/services/client-4.jpg"
-                alt="Client Image"
-              />
-              <span> អ្នកនាង សាវរី <b> (Ms. Savry) </b> </span>
-            </div>
+          <div class="services-image container-image" data-aos="fade-left">
+            <img
+              src="../assets/image/services/services-3.webp"
+              alt="Hero Image"
+            />
           </div>
+        </div>
+      </section>
+
+      <!-- Poster -->
+      <section class="poster" id="poster">
+        <div class="poster-container" data-aos="fade-down">
+          <img src="../assets/image/poster/poster-1.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-2.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-3.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-4.webp" alt="Poster Image" />
+        </div>
+
+        <div class="poster-content" data-aos="zoom-in">
+          <h1>មុខម្ហូបពិសេសប្រចាំហាង</h1>
+          <p>
+            ហាងរបស់យើងខ្ញុំបើកទទួលភ្ញៀវជារៀងរាល់ថ្ងៃ <br />
+            ចាប់ពីថ្ងៃច័ន្ទ ដល់ ថ្ងៃអាទិត្យ វេលាម៉ោង ៧:០០ ព្រឹក ដល់ ៧:០០ យប់
+          </p>
+        </div>
+
+        <div class="poster-container" data-aos="fade-up">
+          <img src="../assets/image/poster/poster-5.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-6.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-7.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-8.webp" alt="Poster Image" />
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="f-content">
-          <a href="#" class="footer-logo">
-            <img src="../assets/image/logo.png" alt="logo" />
-          </a>
+    <footer class="footer" data-aos="fade-up">
+      <h1 class="footer-title">សូមអរគុណសម្រាប់ការគាំទ្រ !!</h1>
+
+      <div class="footer-main">
+        <div class="footer-container container">
+          <ul class="footer-list footer-socials">
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-tiktok-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-app">
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-apple-fill"></i>
+                <span>iPhone</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-android-fill"></i>
+                <span> Android </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-link">
+            <li>
+              <a href="#">Term & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <p class="footer-copy">
+            &copy; Copyright <span id="year"></span> GO24 Cambodia Co., Ltd. All
+            rights reserved.
+          </p>
         </div>
-
-        <ul class="f-list">
-          <li><a href="../index.html" class="links">ទំព័រដើម</a></li>
-          <li><a href="./menu.html" class="links">មីនុយ</a></li>
-          <li><a href="./about.html" class="links">អំពីយើង</a></li>
-          <li><a href="#" class="links active">សេវាកម្ម</a></li>
-          <li><a href="./contact.html" class="links">ទំនាក់ទំនង</a></li>
-        </ul>
-
-        <ul class="f-socials">
-          <li>
-            <a href="#"> <i class="ri-facebook-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copy-right container">
-        <p>
-          &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team MeyMey</a>
-        </p>
       </div>
     </footer>
 
     <!-- Scrollup -->
-    <a href="#" id="scrollup">
+    <a href="#" id="scrollup" class="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
     <!-- JS -->
     <script src="../assets/js/main.js"></script>

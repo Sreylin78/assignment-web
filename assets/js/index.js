@@ -64,3 +64,4 @@ popularItems.forEach((item) => {
   `;
   popularMenu.appendChild(card);
 });
+

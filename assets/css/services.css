@@ -1,193 +1,100 @@
-.services .container {
-  padding: 120px 0;
-}
-
-.services-1 .container {
-  padding-top: 0;
-}
-
-.services .container {
+/* Services */
+.services-container {
+  padding: 40px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4rem;
-}
-
-.services .image {
-  width: 480px;
-  height: 480px;
-  padding: 20px;
-  border-radius: 8px;
-  background: var(--container-color);
-  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
-}
-
-.services-2 .image {
-  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
-  background-color: var(--body-color);
-}
-
-.services .image img {
-  border-radius: 8px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.services .content {
-  width: 450px;
-}
-
-.services .info {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
-
-.services .info p {
-  font-size: 20px;
-}
-
-.services-2 {
-  background: var(--container-color);
-}
-
-.services-3 .container {
-  padding-bottom: 0;
-}
-
-/* Client */
-#client {
-  background: var(--container-color);
-}
-
-#client .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 4rem;
-}
-
-#client .card {
-  width: 540px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  gap: 40px;
-  cursor: pointer;
-  background: var(--black-color);
-  transition: 0.4s;
-}
-
-#client .card .head {
-  display: flex;
-  flex-direction: column;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 
-#client .card .head .stars {
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
+.services-content,
+.services-image {
+  flex: 1;
 }
 
-#client .card .head .stars i {
-  color: var(--primary-color);
-  font-size: 1.25rem;
-}
-
-#client .card .bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 1.5rem;
-}
-
-#client .card .bottom img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid transparent;
-  outline: 2px solid var(--primary-color);
-}
-
-#client .card .bottom span {
-  color: var(--body-color);
-}
-
-#client .card .bottom span b {
-  color: var(--primary-color);
-}
-
-#client .card:hover {
-  background: #000;
-  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 1180px) {
-  .services .image {
-    width: 380px;
-    height: 380px;
+.services-content {
+  max-width: 725px;
+  h1 {
+    font-size: var(--fs-30);
+    color: var(--primary-color);
+    margin-bottom: 30px;
   }
-  #client .container {
-    justify-content: center;
-  }
-  #client .container .card {
-    max-width: 380px;
+  p {
+    font-size: var(--fs-25);
+    margin-bottom: 40px;
   }
 }
 
-@media screen and (max-width: 968px) {
-  .services .container {
-    justify-content: center;
+#services-2 {
+  background: var(--container-color);
+}
+
+@media screen and (max-width: 998px) {
+  .services-container {
+    flex-direction: column;
+    gap: 5rem;
   }
-  .services .image {
-    width: 380px;
-    height: 380px;
+  .services-content,
+  .services-image {
+    width: 550px;
   }
-  .services-1 .image,
-  .services-3 .image {
+  .services-image {
+    min-height: 523px;
+
+    img {
+      height: 523px;
+    }
+  }
+  #services-1 .services-image,
+  #services-3 .services-image {
     order: -1;
-  }
-  .services .info h1 {
-    text-align: center;
-  }
-  #client .container .card {
-    max-width: 450px;
-    padding: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #services.section {
-    padding-top: 0;
+  .services-content,
+  .services-image {
+    width: 450px;
+  }
+  .services-image {
+    min-height: 423px;
+
+    img {
+      height: 423px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .services-content,
+  .services-image {
+    width: 350px;
+  }
+  .services-image {
+    min-height: 323px;
+
+    img {
+      height: 323px;
+    }
+  }
+  .services-content {
+    h1 {
+      margin-bottom: 20px;
+    }
   }
 }
 
 @media screen and (max-width: 468px) {
-  .image {
-    width: 320px;
-    height: 320px;
-    padding: 10px;
-  }
-  .content {
+  .services-content,
+  .services-image {
     width: 300px;
   }
-}
+  .services-image {
+    min-height: 277px;
 
-@media screen and (max-width: 340px) {
-  .image {
-    width: 280px;
-    height: 280px;
-  }
-  .content {
-    width: 250px;
+    img {
+      height: 277px;
+    }
   }
 }
