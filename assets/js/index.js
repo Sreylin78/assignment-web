@@ -1,27 +1,39 @@
+// Hero Image
+const changeImage = () => {
+  const imgContainer = document.querySelectorAll(".hero-container .image img");
+  const btnNext = document.getElementById("#next");
+  const btnPrev = document.getElementById("#prev");
+
+  console.log(imgContainer, btnNext, btnPrev);
+};
+
+changeImage();
+
+// Render Menu Popular
 const popularItems = [
   {
-    image: "../assets/image/menu/menu-2.jpg",
+    image: "./assets/image/menu/menu-2.jpg",
     title: "ខ្យងផ្លិតឆាម្រេចខ្ទី",
     description: "Description for ខ្យងផ្លិតឆាម្រេចខ្ទី",
     price: "៥០.០០០៛",
     stars: 4,
   },
   {
-    image: "../assets/image/menu/menu-8.jpg",
+    image: "./assets/image/menu/menu-8.jpg",
     title: "ស្ងោរជ្រក់បង្កង",
     description: "Description for ស្ងោរជ្រក់បង្កង",
     price: "១៦០.០០០៛",
     stars: 4,
   },
   {
-    image: "../assets/image/menu/menu-14.jpg",
+    image: "./assets/image/menu/menu-14.jpg",
     title: "បាយឆាគ្រឿងសមុទ្រ",
     description: "Description for បាយឆាគ្រឿងសមុទ្រ",
     price: "៦៣.០០០៛",
     stars: 4,
   },
   {
-    image: "../assets/image/menu/menu-16.jpg",
+    image: "./assets/image/menu/menu-16.jpg",
     title: "ប្រហុកខ្ទិះ",
     description: "Description for ប្រហុកខ្ទិះ",
     price: "៥៤,០០០៛",
@@ -33,7 +45,7 @@ const popularMenu = document.getElementById("menuContainer");
 
 popularItems.forEach((item) => {
   const card = document.createElement("a");
-  card.href = "./pages/menu.html"
+  card.href = "./pages/menu.html";
   card.classList.add("card");
   card.innerHTML = `
     <img src="${item.image}" alt="Menu Image" />

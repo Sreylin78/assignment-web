@@ -136,7 +136,7 @@ ul {
   transform: translateX(-50%) scaleX(0);
   transform-origin: right;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
   height: 3px;
   background-color: var(--black-color);
   transition: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -160,7 +160,7 @@ ul {
   background: var(--primary-color);
   color: var(--body-color);
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: 0.4s;
 }
 
@@ -187,7 +187,7 @@ ul {
   flex-direction: column;
   padding: 20px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 8px;
   gap: 20px;
   cursor: pointer;
   transition: 0.4s;
@@ -196,7 +196,7 @@ ul {
 .card img {
   width: 100%;
   height: 150px;
-  border-radius: 4px;
+  border-radius: 8px;
   object-fit: cover;
   transition: 0.4s;
 }
@@ -278,10 +278,6 @@ ul {
   column-gap: 4rem;
 }
 
-#nav-menu ul li a {
-  font-size: 18px;
-}
-
 #nav-menu .active {
   color: var(--black-color);
 }
@@ -290,12 +286,24 @@ ul {
   transform: translateX(-50%) scaleX(1);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
 #nav-close,
-#nav-toggle {
+#nav-toggle,
+#nav-mode
+ {
   display: none;
   cursor: pointer;
   color: var(--title-color);
   font-size: 1.5rem;
+}
+
+#nav-mode{
+  display: inline-block;
 }
 
 /* Header Fixed */
@@ -395,7 +403,7 @@ ul {
   place-content: center;
   background: var(--body-color);
   color: var(--black-color);
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 1.25rem;
   transition: 0.4s;
 }
@@ -442,7 +450,7 @@ ul {
   font-size: 1.5rem;
   opacity: 0;
   visibility: none;
-  border-radius: 4px;
+  border-radius: 8px;
   pointer-events: none;
   transition: 0.4s;
 }
