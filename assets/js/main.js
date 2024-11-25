@@ -59,7 +59,7 @@ if (year) {
 
 // AOS Init
 AOS.init({
-  duration: 1000,
+  duration: 1500,
   once: true,
   offset: 100,
 });

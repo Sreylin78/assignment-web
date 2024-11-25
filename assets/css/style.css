@@ -69,6 +69,10 @@ input {
   outline: none;
 }
 
+p {
+  line-height: 1.4;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -134,8 +138,14 @@ input {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
-  color: var(--black-color);
   font-size: var(--fs-20);
+  .ri-star-fill,
+  .ri-star-half-line {
+    color: var(--primary-color);
+  }
+  .ri-star-line {
+    color: var(--black-color);
+  }
 }
 
 .container-image {
