@@ -1,0 +1,137 @@
+/* Hero */
+.hero-container {
+    padding: 40px 0;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-content,
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-content {
+    max-width: 725px;
+    h1 {
+      font-size: var(--fs-30);
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: var(--fs-25);
+      margin-bottom: 40px;
+    }
+  }
+  
+  /* Popular */
+  #slider {
+    background: var(--container-color);
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+  }
+  
+  .services-content,
+  .services-image {
+    flex: 1;
+  }
+  
+  .services-content {
+    max-width: 709px;
+    p {
+      font-size: var(--fs-25);
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 998px) {
+    .hero-container {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .services-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .hero-content,
+    .hero-image,
+    .services-content {
+      width: 550px;
+    }
+    .hero-image,
+    .services-image {
+      min-height: 523px;
+  
+      img {
+        height: 523px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content,
+    .hero-image,
+    .services-image,
+    .services-content {
+      width: 450px;
+    }
+    .hero-image,
+    .services-image {
+      min-height: 423px;
+  
+      img {
+        height: 423px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 568px) {
+    .hero-content,
+    .hero-image,
+    .services-content,
+    .services-image {
+      width: 350px;
+    }
+    .hero-image,
+    .services-image {
+      min-height: 323px;
+  
+      img {
+        height: 323px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    .hero-content,
+    .hero-image,
+    .services-content,
+    .services-image {
+      width: 300px;
+    }
+    .hero-image,
+    .services-image {
+      min-height: 277px;
+  
+      img {
+        height: 277px;
+      }
+    }
+  }
+  
