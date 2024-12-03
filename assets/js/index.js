@@ -1,3 +1,15 @@
+// Hero Image
+const changeImage = () => {
+  const imgContainer = document.querySelectorAll(".hero-container .image img");
+  const btnNext = document.getElementById("#next");
+  const btnPrev = document.getElementById("#prev");
+
+  console.log(imgContainer, btnNext, btnPrev);
+};
+
+changeImage();
+
+// Render Menu Popular
 const popularItems = [
   {
     image: "./assets/image/menu/menu-2.jpg",
@@ -33,7 +45,7 @@ const popularMenu = document.getElementById("menuContainer");
 
 popularItems.forEach((item) => {
   const card = document.createElement("a");
-  card.href = "./pages/menu.html"
+  card.href = "./pages/menu.html";
   card.classList.add("card");
   card.innerHTML = `
     <img src="${item.image}" alt="Menu Image" />
@@ -52,3 +64,4 @@ popularItems.forEach((item) => {
   `;
   popularMenu.appendChild(card);
 });
+

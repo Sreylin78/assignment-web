@@ -10,6 +10,18 @@
     <meta name="keywords" content="restaurant, food, Cambodian cuisine" />
     <title>មុីនុយផេក</title>
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/menu.css" />
@@ -25,106 +37,413 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <nav class="container">
+    <header class="header" id="header">
+      <nav class="nav container">
         <a href="#" class="nav-logo">
-          <img src="../assets/image/logo.png" alt="logo" />
+          <img src="../assets/image/logo.png" alt="Logo Image" />
+          <span>មីមី ភោជនីយដ្ឋាន</span>
         </a>
-        <div id="nav-menu">
-          <ul>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+            <li><a class="nav-link active" href="#">មីនុយ</a></li>
+            <li><a class="nav-link" href="./about.html">អំពីយើង</a></li>
             <li>
-              <a class="links" href="../index.html">ទំព័រដើម</a>
+              <a class="nav-link" href="./services.html">សេវាកម្ម</a>
             </li>
             <li>
-              <a class="active links" href="#">មីនុយ</a>
-            </li>
-            <li>
-              <a class="links" href="./about.html">អំពីយើង</a>
-            </li>
-            <li>
-              <a class="links" href="./services.html">សេវាកម្ម</a>
-            </li>
-            <li>
-              <a class="links" href="./contact.html">ទំនាក់ទំនង</a>
+              <a class="nav-link" href="./contact.html">ទំនាកទំនង</a>
             </li>
           </ul>
-          <!-- Close Menu - Nav Mobile -->
-          <div id="nav-close">
-            <i class="ri-close-large-fill"></i>
+
+          <!-- Nav Close -->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-fill"></i>
           </div>
         </div>
-        <!-- Open Menu - Nav Mobile -->
-        <div id="nav-toggle">
+
+        <!-- Nav Open -->
+        <div class="nav-open" id="nav-open">
           <i class="ri-menu-fill"></i>
         </div>
       </nav>
     </header>
 
-    <!-- Content -->
-    <main id="main">
-      <section id="menu" class="section">
+    <!-- main -->
+    <main class="main">
+      <!-- Popular Menu -->
+      <section class="section popular" id="popular" data-aos="fade-up">
+        <h1 class="section-title" data-aos="fade-down">មុខម្ហូបដែលពេញនិយម</h1>
+
+        <div class="popular-container container">
+          <div class="card" data-aos="zoom-in">
+            <img src="../assets/image/menu/Khmer Food 5.png" alt="Menu Image" />
+
+            <div class="card-details">
+              <div>
+                <span>មាន់ដុតកូកា</span>
+                <span class="rate-start">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div>
+                <span>២០០០០ រៀល</span>
+                <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-aos="zoom-in">
+            <img src="../assets/image/menu/Khmer Food 3.png" alt="Menu Image" />
+
+            <div class="card-details">
+              <div>
+                <span>ឡុកឡាក់សាច់គោ</span>
+                <span class="rate-start">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div>
+                <span>១៨០០០ រៀល</span>
+                <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-aos="zoom-in">
+            <img src="../assets/image/menu/Khmer Food 4.png" alt="Menu Image" />
+
+            <div class="card-details">
+              <div>
+                <span>ឆាងាវអំពិលទុំ</span>
+                <span class="rate-start">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div>
+                <span>២៤០០០ រៀល</span>
+                <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section slider" id="odd-section">
         <h1 class="section-title">មុខម្ហូបដែលពេញនិយម</h1>
 
-        <div class="container" id="pupularContainer"></div>
-      </section>
+        <div class="swiper-container container">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 5.png"
+                alt="Menu Image"
+              />
 
-      <section class="section" id="newest">
-        <h1 class="section-title">មុខម្ហូបថ្មីៗ</h1>
+              <div class="card-details">
+                <div>
+                  <span>មាន់ដុតកូកា</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>២០០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
 
-        <div class="container" id="newContainer"></div>
-      </section>
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 3.png"
+                alt="Menu Image"
+              />
 
-      <section class="section" id="allmenu">
-        <h1 class="section-title">មីនុយទាំងអស់</h1>
-        <div class="wrapper">
-          <div class="container" id="allContainer"></div>
+              <div class="card-details">
+                <div>
+                  <span>ឡុកឡាក់សាច់គោ</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>១៨០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
 
-          <button class="button button-black load-more">បន្ថែម ៤</button>
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 4.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>ឆាងាវអំពិលទុំ</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>២៤០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 5.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>មាន់ដុតកូកា</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>២០០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 3.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>ឡុកឡាក់សាច់គោ</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>១៨០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 4.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>ឆាងាវអំពិលទុំ</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>២៤០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 5.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>មាន់ដុតកូកា</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>២០០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 3.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>ឡុកឡាក់សាច់គោ</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>១៨០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <img
+                src="../assets/image/menu/Khmer Food 4.png"
+                alt="Menu Image"
+              />
+
+              <div class="card-details">
+                <div>
+                  <span>ឆាងាវអំពិលទុំ</span>
+                  <span class="rate-start">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div>
+                  <span>២៤០០០ រៀល</span>
+                  <span class="btn btn-small">ពិន្ទុនៃការវាយតម្លៃ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="f-content">
-          <a href="#" class="footer-logo">
-            <img src="../assets/image/logo.png" alt="logo" />
-          </a>
+    <footer class="footer">
+      <h1 class="footer-title">សូមអរគុណសម្រាប់ការគាំទ្រ !!</h1>
+
+      <div class="footer-main">
+        <div class="footer-container container">
+          <ul class="footer-list footer-socials">
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-tiktok-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-app">
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-apple-fill"></i>
+                <span>iPhone</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-android-fill"></i>
+                <span> Android </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-link">
+            <li>
+              <a href="#">Term & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <p class="footer-copy">
+            &copy; Copyright <span id="year"></span> GO24 Cambodia Co., Ltd. All
+            rights reserved.
+          </p>
         </div>
-
-        <ul class="f-list">
-          <li><a href="../index.html" class="links">ទំព័រដើម</a></li>
-          <li><a href="#" class="links active">មីនុយ</a></li>
-          <li><a href="./about.html" class="links">អំពីយើង</a></li>
-          <li><a href="./services.html" class="links">សេវាកម្ម</a></li>
-          <li><a href="./contact.html" class="links">ទំនាក់ទំនង</a></li>
-        </ul>
-
-        <ul class="f-socials">
-          <li>
-            <a href="#"> <i class="ri-facebook-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copy-right container">
-        <p>
-          &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team MeyMey</a>
-        </p>
       </div>
     </footer>
 
     <!-- Scrollup -->
-    <a href="#" id="scrollup">
+    <a href="#" id="scrollup" class="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- JS -->
     <script src="../assets/js/main.js"></script>

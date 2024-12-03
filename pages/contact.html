@@ -22,283 +22,311 @@
 
     <!-- WebIcon -->
     <link rel="icon" href="../assets/image/logo.png" />
+
     <!-- Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <nav class="container">
+    <header class="header" id="header">
+      <nav class="nav container">
         <a href="#" class="nav-logo">
-          <img src="../assets/image/logo.png" alt="logo" />
+          <img src="../assets/image/logo.png" alt="Logo Image" />
+          <span>មុីមុី ភោជនីយដ្ឋាន</span>
         </a>
-        <div id="nav-menu">
-          <ul>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="../index.html">ទំព័រដើម</a></li>
+            <li><a class="nav-link" href="./menu.html">មីនុយ</a></li>
+            <li><a class="nav-link" href="./about.html">អំពីយើង</a></li>
             <li>
-              <a class="links" href="../index.html">ទំព័រដើម</a>
+              <a class="nav-link" href="./services.html">សេវាកម្ម</a>
             </li>
             <li>
-              <a class="links" href="./menu.html">មីនុយ</a>
-            </li>
-            <li>
-              <a class="links" href="./about.html">អំពីយើង</a>
-            </li>
-            <li>
-              <a class="links" href="./services.html">សេវាកម្ម</a>
-            </li>
-            <li>
-              <a class="active links" href="#">ទំនាក់ទំនង</a>
+              <a class="nav-link active" href="#">ទំនាក់ទំនង</a>
             </li>
           </ul>
-          <!-- Close Menu - Nav Mobile -->
-          <div id="nav-close">
-            <i class="ri-close-large-fill"></i>
+
+          <!-- Nav Close -->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-fill"></i>
           </div>
         </div>
-        <!-- Open Menu - Nav Mobile -->
-        <div id="nav-toggle">
+
+        <!-- Nav Open -->
+        <div class="nav-open" id="nav-open">
           <i class="ri-menu-fill"></i>
         </div>
       </nav>
     </header>
 
-    <!-- Content -->
-    <main id="main">
-      <section id="contact" class="section">
-        <h1 class="section-title">ទំនាក់ទំនង</h1>
+    <!-- main -->
+    <main class="main">
+      <!-- Contact -->
+      <section class="section contact" id="contact" data-aos="fade-up">
+        <div class="contact-container container">
+          <div class="contact-content" data-aos="fade-right">
+            <h1>ទំនាក់ទំនងមុីមុី ភោជនីយដ្ឋាន</h1>
 
-        <div class="container">
-          <div class="content">
-            <h2>ទាក់ទងមីមី ភោជនីយដ្ឋាន</h2>
             <p>
-              យើងរីករាយក្នុងការទទួលស្វាគមន៍អ្នកមកកាន់ មេយមេយ ភោជនីយដ្ឋាន
-              នៅក្នុងខេត្តតាកែវ ដើម្បីអោយអ្នកមានបទពិសោធន៍អាហារខ្មែរដ៏អស្ចារ្យ
-              និងប្លែកមិនធ្លាប់មានពីមុន។
+              យើងរីករាយក្នុងការទទួលស្វាគមន៍លោកអ្នកមកកាន់ មុីមុី ភោជនីយដ្ឋាន
+              ក្នុងខេត្តតាកែវ ដើម្បីទទួលយកនូវបទពិសោធន៍ថ្មីមួយតាមបែបអាហារខ្មែរ
+              ដ៏អស្ចារ្យ និងប្លែកដែលមិនធ្លាប់មានពីមុនមក ។
             </p>
 
-            <div class="info">
+            <div class="contact-info">
               <div>
-                <div class="c-icon"><i class="ri-map-pin-2-line"></i></div>
-                <span>
-                  ផ្ទះលេខ ១៨, ផ្លូវជាតិលេខ ២, ស្រុកត្រាំង, <br />
-                  ខេត្តតាកែវ, កម្ពុជា
-                </span>
+                <i class="ri-phone-line"></i>
+                <a href="tel:+855123456789">(+855) 12 345 6789</a>
               </div>
+
               <div>
-                <div class="c-icon"><i class="ri-phone-line"></i></div>
-                <span> (+៨៥៥) ១២៣​ ៤៥៦ ​៧៨៩០ </span>
+                <i class="ri-mail-line"></i>
+                <a href="mailto:meymeyrestaurant168@gmail.com"
+                  >meymeyrestaurant168@gmail.com</a
+                >
               </div>
+
               <div>
-                <div class="c-icon"><i class="ri-mail-line"></i></div>
-                <span> info@meymeyrestaurant.com </span>
+                <i class="ri-map-pin-2-line"></i>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=%E1%9E%97%E1%9E%BC%E1%9E%98%E1%9E%B7%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%98%E1%9F%82%E1%9E%84+%E1%9E%83%E1%9E%BB%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%87%E1%9F%86%E1%9E%9A%E1%9F%89%E1%9E%B6%E1%9E%9F%E1%9F%92%E1%9E%96%E1%9E%93+%E1%9E%9F%E1%9F%92%E1%9E%9A%E1%9E%BB%E1%9E%80%E1%9E%9F%E1%9F%86%E1%9E%9A%E1%9E%B6%E1%9E%84+%E1%9E%81%E1%9F%91%E1%9F%92%E1%9E%91%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%B6%E1%9E%80%E1%9F%82%E1%9E%9C"
+                >
+                  ភូមិត្រមែង ឃុំជំរះពេន ស្រុកសំរោង ខេត្តតាកែវ
+                </a>
               </div>
             </div>
           </div>
 
-          <form class="form">
-            <div class="input">
-              <label for="name">ឈ្មោះ</label>
+          <form class="contact-form" data-aos="fade-left">
+            <div class="inputs">
+              <label for="name">ឈ្មោះអតិថិជន</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder=""
+                placeholder="មុីមុី ភោជនីយដ្ឋាន"
                 required
               />
             </div>
-            <div class="input">
-              <label for="email">អុីមែល</label>
+            <div class="inputs">
+              <label for="email">អុីម៊ែលអតិថិជន</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder=""
                 required
+                placeholder="meymeyrestaurant168@gmail.com"
               />
             </div>
-            <div class="input">
-              <label for="message">សារ</label>
-              <textarea name="message" placeholder="" id="message"></textarea>
+            <div class="inputs">
+              <label for="message">បញ្ចេញមតិ</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder=""
+                required
+              ></textarea>
             </div>
-            <div class="btn">
-              <button type="submit" value="send" class="button">
-                ផ្ញើរសារ
-              </button>
-            </div>
+
+            <button class="btn" type="submit">បញ្ជូន</button>
           </form>
         </div>
       </section>
 
-      <section id="map" class="section">
-        <div class="container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2181.650821083652!2d104.78216859152295!3d10.905369280432858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31099da0f8fab50b%3A0x61f6da8b426c1cf!2sPrey%20Sandek%20Market!5e1!3m2!1sen!2skh!4v1729702974659!5m2!1sen!2skh"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <!-- Question -->
+      <section class="section question" id="question" data-aos="fade-up">
+        <h1 class="section-title">សំណួរ និង ចម្លើយ</h1>
+
+        <div class="question-container container">
+          <div class="faqs" data-aos="zoom-in">
+            <h2>តើទីតាំងហាងមុីមុី ភោជនីយដ្ឋាន នៅឯណា ?</h2>
+
+            <p>
+              ទីតាំងហាងមុីមុី ភោជនីយដ្ឋានស្ថិតនៅភូមិត្រមែង ឃុំជំរះពេន ស្រុកសំរោង
+              ខេត្តតាកែវ ឬមើលផែនទីខាងក្រោម ។
+            </p>
+          </div>
+
+          <div class="faqs" data-aos="zoom-in" data-aos-delay="200">
+            <h2>តើយើងអាចកម្មង់ម្ហូបបានដោយរបៀបណា ?</h2>
+
+            <p>
+              លោកអ្នកអាចកម្មង់ម្ហូបបានដោយពិនិត្យមើលនៅក្នុងមីនុយមុខម្ហូបបានដោយមានមុខម្ហូបជាច្រើនមុខ។
+            </p>
+          </div>
+
+          <div class="faqs" data-aos="zoom-in" data-aos-delay="300">
+            <h2>តើហាងលោកអ្នកមានសេវាកម្មអ្វីខ្លះ ?</h2>
+
+            <p>
+              ហាងមុីមុី ភោជនីយដ្ឋានយើងខ្ញុំមានសេវាកម្មជាច្រើន
+              លោកអ្នកអាចពិនិត្យមើលនៅគេហទំព័រសេវាកម្មបាន ។
+            </p>
+          </div>
+
+          <div class="faqs" data-aos="zoom-in" data-aos-delay="400">
+            <h2>តើខ្ញុំអាចដឹងពីអ្នកបន្ថែមដោយរបៀបណា ?</h2>
+
+            <p>
+              លោកអ្នកអាចដឹងអំពីយើងបន្ថែមដោយលោកអ្នកគ្រាន់តែ
+              ចូលទៅមើលក្នុងគេហទំព័រអំពីយើងបាន ។
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="faqs" class="section">
-        <h1 class="section-title">សំណួរ និងចម្លើយ</h1>
-        <div class="container">
-          <div class="faq-content faq-open">
-            <div class="quest">
-              <div>
-                <h2>តើខ្ញុំអាចកក់តុនៅមេយមេយដោយរបៀបណា?</h2>
-              </div>
-              <i class="ri-arrow-down-s-line"></i>
-            </div>
-            <div class="answ">
-              <span
-                >ចម្លើយ: អ្នកអាចធ្វើការកក់តុនៅមីមី
-                ភោជនីយដ្ឋានតាមរយៈគេហទំព័ររបស់យើង www.meymeyrestaurant.com
-                ឬតាមការហៅទូរស័ព្ទផ្ទាល់ទៅលេខ (+៨៥៥) ១២៣ ៤៥៦​​ ៧៨៩០។
-              </span>
-            </div>
+      <!-- Poster -->
+      <section class="poster" id="poster">
+        <div class="poster-container" data-aos="fade-down">
+          <img src="../assets/image/poster/poster-1.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-2.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-3.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-4.webp" alt="Poster Image" />
+        </div>
+
+        <div class="poster-content" data-aos="zoom-in">
+          <h1>មុខម្ហូបពិសេសប្រចាំហាង</h1>
+          <p>
+            ហាងរបស់យើងខ្ញុំបើកទទួលភ្ញៀវជារៀងរាល់ថ្ងៃ <br />
+            ចាប់ពីថ្ងៃច័ន្ទ ដល់ ថ្ងៃអាទិត្យ វេលាម៉ោង ៧:០០ ព្រឹក ដល់ ៧:០០ យប់
+          </p>
+        </div>
+
+        <div class="poster-container" data-aos="fade-up">
+          <img src="../assets/image/poster/poster-5.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-6.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-7.webp" alt="Poster Image" />
+          <img src="../assets/image/poster/poster-8.webp" alt="Poster Image" />
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section class="section map" id="map" data-aos="fade-up">
+        <div class="map-container container">
+          <div class="map-content" data-aos="fade-right">
+            <h2>ផែនទីទីតាំងហាងមុីមុី ភោជនីយដ្ឋាន</h2>
+
+            <p>
+              ដើម្បីជាភាពងាយស្រួលដល់ពុកម៉ែ បងប្អូនក្នុងការធ្វើដំណើរ
+              មកកាន់ទីតាំងហាងយើងខ្ញុំ បងប្អូនអាចមើលតាមផែនទី
+              ដែលមាននៅខាងក្រោមនេះបាន ។
+            </p>
+
+            <a
+              href="https://maps.app.goo.gl/8fn5jJVnVAXv36Up8"
+              target="_blank"
+              class="btn"
+            >
+              ផែនទីហាងមុីមុី ភោជនីយដ្ឋាន
+            </a>
           </div>
 
-          <div class="faq-content faq-close">
-            <div class="quest">
-              <div>
-                <h2>
-                  តើមានបន្ទប់អាហារឯកជនសម្រាប់ព្រឹត្តិការណ៍ចំនួនប៉ុន្មាននាក់?
-                </h2>
-              </div>
-              <i class="ri-arrow-down-s-line"></i>
-            </div>
-            <div class="answ">
-              <span
-                >ចម្លើយ: បន្ទប់អាហារឯកជនរបស់យើងអាចទទួលភ្ញៀវបានរហូតដល់ 20 នាក់
-                សម្រាប់ព្រឹត្តិការណ៍ផ្ទាល់ខ្លួន
-                ឬជំនួបជាមួយគ្រួសារដ៏សន្សឹមសន្សាល។
-              </span>
-            </div>
-          </div>
-
-          <div class="faq-content faq-close">
-            <div class="quest">
-              <div>
-                <h2>
-                  តើនៅភោជនីយដ្ឋានមានមុខម្ហូបសមស្របសម្រាប់អ្នកធ្វើចំណីអាហារបួស
-                  ឬអាហារបំប៉នទេ?
-                </h2>
-              </div>
-              <i class="ri-arrow-down-s-line"></i>
-            </div>
-            <div class="answ">
-              <span
-                >ចម្លើយ: បាទ/ចាស! យើងមានមុខម្ហូបសម្រាប់អ្នកធ្វើចំណីអាហារបួស
-                និងអ្នកសម្រាប់អាហារបំប៉ន។
-                សូមជំរាបជាមុនដើម្បីក្រុមការងារអាចរៀបចំអាហារដែលសមស្របសម្រាប់អ្នកបាន។
-              </span>
-            </div>
-          </div>
-
-          <div class="faq-content faq-close">
-            <div class="quest">
-              <div>
-                <h2>តើមានបញ្ចុះតម្លៃឬឯកសារផ្សេងៗសម្រាប់ក្រុមធំៗទេ?</h2>
-              </div>
-              <i class="ri-arrow-down-s-line"></i>
-            </div>
-            <div class="answ">
-              <span
-                >ចម្លើយ: បាទ/ចាស! យើងផ្តល់ជូនបញ្ចុះតម្លៃពិសេសសម្រាប់ក្រុមធំៗ
-                និងព្រឹត្តិការណ៍ជាពិសេស។ សូមទាក់ទងជាមុន ដើម្បីធ្វើការចរចា
-                និងទទួលបានព័ត៌មានបន្ថែម។
-              </span>
-            </div>
-          </div>
-
-          <div class="faq-content faq-close">
-            <div class="quest">
-              <div>
-                <h2>តើមានកន្លែងចតរថយន្តសម្រាប់ភ្ញៀវទេ?</h2>
-              </div>
-              <i class="ri-arrow-down-s-line"></i>
-            </div>
-            <div class="answ">
-              <span
-                >ចម្លើយ: បាទ/ចាស!
-                ភោជនីយដ្ឋានរបស់យើងមានកន្លែងចតរថយន្តសម្រាប់ភ្ញៀវដោយសុវត្ថិភាព
-                និងងាយស្រួល។
-              </span>
-            </div>
-          </div>
-
-          <div class="faq-content faq-close">
-            <div class="quest">
-              <div>
-                <h2>តើមានសេវាកម្មដឹកជញ្ជូនម្ហូបឬទេ?</h2>
-              </div>
-              <i class="ri-arrow-down-s-line"></i>
-            </div>
-            <div class="answ">
-              <span
-                >ចម្លើយ: បាទ/ចាស!
-                យើងផ្តល់ជូនសេវាកម្មដឹកជញ្ជូនម្ហូបតាមតំបន់ជិតខាង។
-                សូមទាក់ទងសម្រាប់ព័ត៌មានលម្អិត។
-              </span>
-            </div>
+          <div class="map-image" data-aos="fade-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.4516304780443!2d104.74101286967021!3d11.1475238812117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31097300182a5fc3%3A0xcb4d11c8eaaa6cca!2z4Z6B4Z-B4Z6P4Z-S4Z6P4Z6P4Z624Z6A4Z-C4Z6c!5e1!3m2!1sen!2skh!4v1731754804088!5m2!1sen!2skh"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="f-content">
-          <a href="#" class="footer-logo">
-            <img src="../assets/image/logo.png" alt="logo" />
-          </a>
+    <footer class="footer" data-aos="fade-up">
+      <h1 class="footer-title">សូមអរគុណសម្រាប់ការគាំទ្រ !!</h1>
+
+      <div class="footer-main">
+        <div class="footer-container container">
+          <ul class="footer-list footer-socials">
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-tiktok-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-app">
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-apple-fill"></i>
+                <span>iPhone</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn-white footer-app-icon">
+                <i class="ri-android-fill"></i>
+                <span> Android </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list footer-link">
+            <li>
+              <a href="#">Term & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <p class="footer-copy">
+            &copy; Copyright <span id="year"></span> GO24 Cambodia Co., Ltd. All
+            rights reserved.
+          </p>
         </div>
-
-        <ul class="f-list">
-          <li><a href="../index.html" class="links">ទំព័រដើម</a></li>
-          <li><a href="./menu.html" class="links">មីនុយ</a></li>
-          <li><a href="./about.html" class="links">អំពីយើង</a></li>
-          <li><a href="./services.html" class="links">សេវាកម្ម</a></li>
-          <li><a href="#" class="links active">ទំនាក់ទំនង</a></li>
-        </ul>
-
-        <ul class="f-socials">
-          <li>
-            <a href="#"> <i class="ri-facebook-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-telegram-2-fill"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="ri-tiktok-fill"></i> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copy-right container">
-        <p>
-          &copy; <span id="year"></span> All rights reserved. Designed by:
-          <a class="links" href="#">Team MeyMey</a>
-        </p>
       </div>
     </footer>
 
     <!-- Scrollup -->
-    <a href="#" id="scrollup">
+    <a href="#" id="scrollup" class="scrollup">
       <i class="ri-arrow-up-line"></i>
     </a>
 
-    <!-- SweetAlert JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <!-- EmailJS -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
+
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- JS -->
     <script src="../assets/js/main.js"></script>
