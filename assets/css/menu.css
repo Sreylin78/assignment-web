@@ -48,3 +48,9 @@
 .swiper-pagination-bullet:hover {
   background-color: var(--primary-color);
 }
+
+@media screen and (max-width: 568px) {
+  .swiper-container {
+    width: 95%;
+  }
+}
