@@ -10,6 +10,7 @@ const initializeSwiper = new Swiper(".swiper-container", {
   breakpoints: {
     768: {
       spaceBetween: 30,
+      pagination: false,
     },
     1200: {
       spaceBetween: 40,
