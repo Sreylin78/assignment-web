@@ -6,7 +6,7 @@
   gap: 3rem;
 }
 
-#odd-section {
+.odd-section {
   background: var(--container-color);
 }
 
