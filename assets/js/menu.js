@@ -1,10 +1,6 @@
-const allMenu = new Swiper(".swiper-container", {
+const initializeSwiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
   spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   loop: true,
   centeredSlides: true,
   autoplay: {
@@ -17,6 +13,10 @@ const allMenu = new Swiper(".swiper-container", {
     },
     1200: {
       spaceBetween: 40,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     },
   },
 });
