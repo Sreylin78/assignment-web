@@ -18,7 +18,8 @@
   gap: 3rem;
 }
 
-.swiper-container {
+.swiper-container,
+.allmenu-container {
   position: relative;
   width: 90%;
   margin: auto;
@@ -50,7 +51,8 @@
 }
 
 @media screen and (max-width: 568px) {
-  .swiper-container {
+  .swiper-container,
+  .allmenu-container {
     width: 95%;
   }
 }
